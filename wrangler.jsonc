@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lesok",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    // Only the public menu files (index.html, menu.js, images/) are copied here before deploy
+    "directory": "./dist"
+  }
+}
