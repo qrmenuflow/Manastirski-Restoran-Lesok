@@ -82,7 +82,7 @@ window.MENU = [
         dmk: "Свежи краставици со оцет и масло.", den: "Fresh cucumbers with vinegar and oil." },
       { mk: "Зелка салата", en: "Cabbage salad", p: [100, 150], img: "u_zelka.jpg",
         dmk: "Свежо сецкана зелка со оцет и масло.", den: "Freshly shredded cabbage with vinegar and oil." },
-      { mk: "Марула салата", en: "Lettuce salad", p: [90, 140], img: "u_marula.jpg",
+      { mk: "Марула салата", en: "Lettuce salad", p: [90, 140], img: "own_marula.jpg",
         dmk: "Свежа марула со кромидче, оцет и масло.", den: "Fresh lettuce with spring onion, vinegar and oil." },
       { mk: "Цезар салата", en: "Caesar salad", p: [260, null], img: "u_cezar.jpg",
         dmk: "Марула, пилешко на скара, крутони, пармезан и цезар прелив.", den: "Lettuce, grilled chicken, croutons, parmesan and Caesar dressing." },
