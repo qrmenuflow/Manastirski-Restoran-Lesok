@@ -199,7 +199,7 @@ window.MENU = [
       { mk: "Ладно макијато", en: "Iced macchiato", img: "u_ladno_makijato.jpg", p: 90 },
       { mk: "Капучино", en: "Cappuccino", img: "u_kapucino.jpg", p: 80 },
       { mk: "Нес кафе", en: "Nescafé", img: "u_nes.jpg", p: 120 },
-      { mk: "Чај", en: "Tea", img: "u_caj.jpg", p: 60 },
+      { mk: "Чај", en: "Tea", img: "own_caj.jpg", p: 60 },
       { mk: "Млеко", en: "Milk", img: "u_mleko.jpg", p: 60 },
       { mk: "Салеп", en: "Salep", img: "u_salep.jpg", p: 90 },
       { mk: "Топло чоколадо", en: "Hot chocolate", img: "u_cokolado.jpg", p: 100 },
