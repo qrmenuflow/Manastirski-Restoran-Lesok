@@ -126,3 +126,4 @@ own_makedonska.jpg  provided by the user
 own_marula.jpg  provided by the user
 own_pileski_stek.jpg  provided by the user
 own_tava_gravce.jpg  provided by the user
+own_pita.jpg  provided by the user

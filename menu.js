@@ -150,7 +150,7 @@ window.MENU = [
     items: [
       { mk: "Тава Гравче", en: "Tava Gravče (baked beans)", p: "ask", img: "own_tava_gravce.jpg",
         dmk: "Традиционален грав печен во земјена тава со кромид и пиперка.", den: "Traditional beans baked in a clay pan with onion and paprika." },
-      { mk: "Домашна пита (комат)", en: "Homemade pie (piece)", p: "ask", img: "u_pita.jpg",
+      { mk: "Домашна пита (комат)", en: "Homemade pie (piece)", p: "ask", img: "own_pita.jpg",
         dmk: "Рачно развлечена домашна пита со сирење или месо.", den: "Hand-stretched homemade pie with cheese or meat." },
       { mk: "Печено прасе / Свинско печење", en: "Roast piglet / Roast pork", p: "ask", img: "u_prase.jpg",
         dmk: "Бавно печено прасе со хрскава кожичка.", den: "Slow-roasted piglet with crispy crackling." },
