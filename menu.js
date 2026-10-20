@@ -162,7 +162,7 @@ window.MENU = [
         dmk: "Пиперки полнети со мелено месо и ориз, во доматен сос.", den: "Peppers stuffed with minced meat and rice in tomato sauce." },
       { mk: "Мусака", en: "Moussaka", p: "ask", img: "u_musaka.jpg",
         dmk: "Слоеви од компири и мелено месо, печени со крем.", den: "Layers of potatoes and minced meat, baked with a creamy topping." },
-      { mk: "Гулаш", en: "Goulash", p: "ask", img: "u_gulas.jpg",
+      { mk: "Гулаш", en: "Goulash", p: "ask", img: "own_gulas.jpg",
         dmk: "Бавно варено месо во густ сос со пиперка.", den: "Slow-cooked meat in a rich paprika sauce." },
       { mk: "Коленица", en: "Pork knuckle", p: "ask", img: "u_kolenica.jpg",
         dmk: "Свинска коленица бавно печена до мекост.", den: "Pork knuckle slow-roasted until tender." }
