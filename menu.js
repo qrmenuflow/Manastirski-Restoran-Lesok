@@ -129,7 +129,7 @@ window.MENU = [
         dmk: "Свинско месо завиткано со кашкавал и сланина.", den: "Pork rolled with yellow cheese and bacon." },
       { mk: "Двојник", en: "Dvojnik (double portion)", q: "450 гр.", p: 600, img: "u_dvojnik.jpg",
         dmk: "Двојна порција мешано месо на скара.", den: "Double portion of mixed grilled meat." },
-      { mk: "Домашно жуле", en: "Homemade žule", q: "200 гр.", p: 200, img: "u_zule.jpg",
+      { mk: "Домашно жуле", en: "Homemade žule", q: "200 гр.", p: 200, img: "own_zule.jpg",
         dmk: "Домашна свинска колбасица на скара.", den: "Homemade grilled pork sausage." },
       { mk: "Бечка шницла", en: "Wiener schnitzel", q: "280 гр.", p: 300, img: "u_pohovan_stek.jpg",
         dmk: "Тенко месо во хрскава похована кора, со лимон.", den: "Thin breaded schnitzel with lemon." },
