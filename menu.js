@@ -72,7 +72,7 @@ window.MENU = [
         dmk: "Домати, краставици, пиперки и кромид, покриени со рендано сирење.", den: "Tomatoes, cucumbers, peppers and onion, topped with grated white cheese." },
       { mk: "Мешана салата", en: "Mixed salad", p: [200, 350], img: "own_meshana.jpg",
         dmk: "Домати, краставици, зелка, морков и марула.", den: "Tomatoes, cucumbers, cabbage, carrot and lettuce." },
-      { mk: "Античка салата", en: "Antique salad", p: [250, 400], img: "u_anticka.jpg",
+      { mk: "Античка салата", en: "Antique salad", p: [250, 400], img: "own_anticka.jpg",
         dmk: "Домати, краставици, маслинки, кромид и парче сирење со оригано.", den: "Tomatoes, cucumbers, olives, onion and a slab of white cheese with oregano." },
       { mk: "Македонска салата", en: "Macedonian salad", img: "u_makedonska.jpg", p: [200, 350],
         dmk: "Печени пиперки, домати, кромид и магдонос.", den: "Roasted peppers, tomatoes, onion and parsley." },

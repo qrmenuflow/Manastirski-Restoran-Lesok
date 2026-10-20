@@ -122,3 +122,4 @@ own_taratur.webp  provided by the user
 own_martini.jpg  provided by the user
 own_pohovani_tikvici.jpg  provided by the user
 own_meshana.jpg  provided by the user
+own_anticka.jpg  provided by the user
