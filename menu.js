@@ -52,7 +52,7 @@ window.MENU = [
         dmk: "Свежи печурки на скара со лук и магдонос.", den: "Fresh grilled mushrooms with garlic and parsley." },
       { mk: "Сирење на скара", en: "Grilled cheese", q: "100 гр.", p: 200, img: "u_sirenje_skara.jpg",
         dmk: "Сирење печено на скара, со малку маслиново масло и пипер.", den: "Grilled cheese with a drizzle of olive oil and pepper." },
-      { mk: "Ролувано сирење", en: "Rolled cheese", q: "100 гр.", p: 220, img: "u_rolovano_sirenje.jpg",
+      { mk: "Роловано сирење", en: "Rolled cheese", q: "100 гр.", p: 220, img: "u_rolovano_sirenje.jpg",
         dmk: "Сирење завиткано во сланина, печено на скара.", den: "Cheese wrapped in bacon, grilled." },
       { mk: "Пржено јајце", en: "Fried egg", q: "1 парче", p: 30, img: "u_przeno_jajce.jpg",
         dmk: "Јајце пржено на око.", den: "Fried egg, sunny side up." },
