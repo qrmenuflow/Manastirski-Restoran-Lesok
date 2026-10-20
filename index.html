@@ -109,7 +109,36 @@
     color: var(--faint); border-bottom: 1px solid transparent; transition: color .2s, border-color .2s;
   }
   .catnav a.active { color: var(--ink); border-bottom-color: var(--brass); }
-  .catnav .wrap { position: relative; max-width: 960px; margin: 0 auto; }
+  .catnav .wrap { position: relative; max-width: 960px; margin: 0 auto; display: flex; align-items: stretch; }
+  .catnav .wrap ul { flex: 1; min-width: 0; padding-left: 10px; }
+  .back {
+    flex: none; display: flex; align-items: center; gap: 6px; padding: 0 12px 0 16px;
+    color: var(--brass); border-right: 1px solid var(--rule); font-size: 11px; letter-spacing: .2em; font-weight: 600;
+  }
+  .back svg { width: 18px; height: 18px; }
+  body:not(.in-group) .catnav, body:not(.in-group) #menu, body:not(.in-group) #legend { display: none; }
+  body.in-group .chooser { display: none; }
+
+  /* ---------- Food / Drinks start screen ---------- */
+  .chooser { max-width: 960px; margin: 0 auto; padding: 8px 16px 48px; }
+  .chooser .caps { text-align: center; color: var(--brass); margin: 18px 0 18px; }
+  .choices { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 700px) { .choices { grid-template-columns: 1fr 1fr; } }
+  .choice {
+    position: relative; overflow: hidden; border-radius: 22px; min-height: 210px; width: 100%;
+    display: flex; flex-direction: column; justify-content: flex-end; text-align: left; padding: 24px;
+    color: #f4ecd9; isolation: isolate; box-shadow: 0 0 0 1px color-mix(in srgb, var(--brass) 40%, transparent);
+  }
+  @media (min-width: 700px) { .choice { min-height: 300px; } }
+  .choice img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 1s ease; }
+  .choice::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgba(10,16,12,.05) 20%, rgba(10,16,12,.82) 100%); }
+  .choice:hover img, .choice:focus-visible img { transform: scale(1.05); }
+  .choice .ttl { font-family: "Cormorant Garamond", Georgia, serif; font-size: 40px; font-weight: 500; line-height: 1; }
+  .choice .sub { font-size: 12.5px; opacity: .8; margin-top: 8px; letter-spacing: .02em; padding-right: 56px; }
+  .choice .go { position: absolute; right: 22px; bottom: 24px; width: 44px; height: 44px; border-radius: 50%;
+    display: grid; place-items: center; border: 1px solid rgba(244,236,217,.5); }
+  .choice .go svg { width: 18px; height: 18px; }
 
   /* Swipe hint – shown for a few seconds when the bar overflows */
   .swipe-hint {
@@ -143,19 +172,23 @@
   @media (min-width: 820px) { .list { grid-template-columns: 1fr 1fr; } }
 
   .dish {
-    display: grid; grid-template-columns: 92px 1fr; gap: 18px; align-items: start;
+    display: grid; grid-template-columns: 104px 1fr; gap: 14px; align-items: center;
     padding: 18px 0; border-bottom: 1px solid var(--rule); text-align: left; width: 100%;
     opacity: 0; transform: translateY(10px); transition: opacity .6s ease, transform .6s ease;
   }
   .dish.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .dish { opacity: 1; transform: none; transition: none; } }
-  @media (min-width: 560px) { .dish { grid-template-columns: 112px 1fr; gap: 22px; } }
+  @media (min-width: 560px) { .dish { grid-template-columns: 128px 1fr; gap: 18px; } }
 
+  /* Square photo whose edges fade softly into the page */
   .arch {
-    position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--img-bg);
-    border-radius: 999px 999px 6px 6px;
-    box-shadow: 0 0 0 1px var(--rule), 0 0 0 4px var(--bg), 0 0 0 5px color-mix(in srgb, var(--brass) 45%, transparent);
-    margin: 5px;
+    position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: transparent;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 18%, #000 82%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 18%, #000 82%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0, #000 18%, #000 82%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, #000 18%, #000 82%, transparent 100%);
+            mask-composite: intersect;
   }
   .arch img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s ease; }
   .dish:hover .arch img { transform: scale(1.06); }
@@ -171,6 +204,14 @@
   .marks span { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; }
   .marks svg { width: 12px; height: 12px; }
 
+  .qty { font-family: "Manrope", sans-serif; font-size: 12px; font-weight: 500; color: var(--faint); letter-spacing: .02em; white-space: nowrap; }
+  .ask { font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 600; }
+  .cat-note { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 17px; color: var(--muted); max-width: 34ch; margin: 14px auto 0; }
+  .sizes { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; color: var(--faint); margin: 12px 0 0; }
+  .dish.plain { grid-template-columns: 1fr; padding: 14px 0; }
+  .dish.plain .info { padding-top: 0; }
+  .dish.plain h3 { font-size: 20px; }
+  .legend:empty { display: none; }
   .legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 22px; color: var(--brass); margin-top: 30px; }
   .legend span { display: inline-flex; align-items: center; gap: 6px; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; }
   .legend svg { width: 12px; height: 12px; }
@@ -248,6 +289,10 @@
 
 <nav class="catnav caps" aria-label="Menu categories">
   <div class="wrap">
+    <button type="button" class="back" id="backBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+      <span data-i18n="back"></span>
+    </button>
     <ul id="catnav"></ul>
     <div class="swipe-hint" id="swipeHint" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -259,6 +304,21 @@
 </nav>
 
 <main>
+  <section class="chooser" id="chooser">
+    <div class="caps" data-i18n="choose"></div>
+    <div class="choices">
+      <button type="button" class="choice" data-group="food">
+        <img src="images/choose_food.jpg" alt="">
+        <span class="ttl" data-i18n="food"></span><span class="sub" data-i18n="foodSub"></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
+      <button type="button" class="choice" data-group="drinks">
+        <img src="images/choose_drinks.jpg" alt="">
+        <span class="ttl" data-i18n="drinks"></span><span class="sub" data-i18n="drinksSub"></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
+    </div>
+  </section>
   <div class="legend" id="legend"></div>
   <div id="menu"></div>
 </main>
@@ -298,20 +358,24 @@
       title: "Манастирски ресторан Лешок",
       title1: "Манастирски ресторан", title2: "Лешок",
       subtitle: "Традиционална македонска кујна во прегратката на природата, во подножјето на Шар Планина.",
-      address: "с. Лешок, Тетово, Северна Македонија",
+      address: "с. Лешок, Тетово, Македонија",
       prices: "Цените се во денари (МКД) и го вклучуваат ДДВ.",
-      credits: "Фотографии: Wikimedia Commons (CC BY-SA) · илустративни.",
-      house: "Специјалитет", veg: "Вегетаријанско", fast: "Посно", den: "ден"
+      credits: "Фотографии: Unsplash и Wikimedia Commons · илустративни.",
+      house: "Специјалитет", veg: "Вегетаријанско", fast: "Посно", den: "ден", ask: "по договор",
+      choose: "Изберете", food: "Храна", drinks: "Пијалоци", back: "Назад",
+      foodSub: "Предјадења · Салати · Скара · Десерти", drinksSub: "Кафе · Сокови · Пиво · Вино · Ракија"
     },
     en: {
       eyebrow: "St. Athanasius Monastery · Lešok",
       title: "Lešok Monastery Restaurant",
       title1: "Monastery Restaurant", title2: "Lešok",
       subtitle: "Traditional Macedonian cuisine in the embrace of nature, at the foot of the Šar Mountains.",
-      address: "Lešok village, Tetovo, North Macedonia",
+      address: "Lešok village, Tetovo, Macedonia",
       prices: "Prices are in Macedonian denars (MKD), VAT included.",
-      credits: "Photos: Wikimedia Commons (CC BY-SA) · illustrative.",
-      house: "Specialty", veg: "Vegetarian", fast: "Fasting", den: "MKD"
+      credits: "Photos: Unsplash and Wikimedia Commons · illustrative.",
+      house: "Specialty", veg: "Vegetarian", fast: "Fasting", den: "MKD", ask: "on request",
+      choose: "Choose", food: "Food", drinks: "Drinks", back: "Back",
+      foodSub: "Starters · Salads · Grill · Desserts", drinksSub: "Coffee · Juices · Beer · Wine · Spirits"
     }
   };
 
@@ -320,7 +384,7 @@
     veg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19l7-7"/></svg>',
     fast: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M7 8h10M9 16l6-2"/></svg>'
   };
-  var ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+  var ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"];
 
   window.PLACEHOLDER_SRC = "data:image/svg+xml," + encodeURIComponent(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><rect width="400" height="500" fill="#d9d0ba"/>' +
@@ -328,6 +392,10 @@
     '<path d="M0 430 Q130 390 230 420 T400 410 V500 H0Z" fill="#5f7556"/></svg>');
 
   var lang = "mk";
+  // Which part of the menu is open: null (start screen), "food" or "drinks" – kept in the URL hash
+  function currentGroup() { var h = location.hash.slice(1); return h === "food" || h === "drinks" ? h : null; }
+  var group = currentGroup();
+  var openedFromChooser = false;
   try {
     var q = new URLSearchParams(location.search).get("lang");
     var saved = localStorage.getItem("lesok-lang");
@@ -336,7 +404,20 @@
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function fmt(n) { return n.toLocaleString(lang === "mk" ? "mk-MK" : "en-US"); }
-  function priceHTML(n) { return fmt(n) + "<small>" + T[lang].den + "</small>"; }
+  // p: number | [a, b] (b may be null) | "ask"
+  function priceHTML(p) {
+    if (p === "ask") return '<span class="ask">' + T[lang].ask + "</span>";
+    var parts = [].concat(p).filter(function (v) { return v != null; });
+    return parts.map(fmt).join(" / ") + "<small>" + T[lang].den + "</small>";
+  }
+  // Quantities are written in Macedonian; convert units for English
+  function qty(q) {
+    if (!q || lang === "mk") return q || "";
+    return q.replace(/(\d),(\d)/g, "$1.$2").replace(/гр\./g, "g").replace(/кг\./g, "kg").replace(/л\./g, "l")
+      .replace("парче", "piece").replace("мала", "small").replace("голема", "large");
+  }
+  function name(d) { return d[lang]; }
+  function note(d) { return lang === "mk" ? d.dmk : d.den; }
   function marksHTML(tags) {
     return (tags || []).map(function (k) { return "<span>" + ICON[k] + T[lang][k] + "</span>"; }).join("");
   }
@@ -348,24 +429,35 @@
     document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t[el.dataset.i18n]; });
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
 
-    document.getElementById("legend").innerHTML = marksHTML(["house", "veg", "fast"]);
+    var hasTags = window.MENU.some(function (c) { return c.items.some(function (d) { return (d.tags || []).length; }); });
+    document.getElementById("legend").innerHTML = hasTags ? marksHTML(["house", "veg", "fast"]) : "";
 
-    document.getElementById("catnav").innerHTML = window.MENU.map(function (c) {
-      return '<li><a href="#' + c.id + '" data-cat="' + c.id + '">' + esc(c[lang]) + "</a></li>";
+    document.body.classList.toggle("in-group", !!group);
+    var cats = window.MENU.map(function (c, ci) { return { c: c, ci: ci }; })
+      .filter(function (x) { return x.c.group === group; });
+
+    document.getElementById("catnav").innerHTML = cats.map(function (x) {
+      return '<li><a href="#' + x.c.id + '" data-cat="' + x.c.id + '">' + esc(x.c[lang]) + "</a></li>";
     }).join("");
 
-    document.getElementById("menu").innerHTML = window.MENU.map(function (c, ci) {
+    document.getElementById("menu").innerHTML = cats.map(function (x, k) {
+      var c = x.c, ci = x.ci;
       return '<section class="cat" id="' + c.id + '">' +
-        '<div class="cat-head"><div class="num">' + ROMAN[ci] + '</div><h2>' + esc(c[lang]) + '</h2>' +
-        '<div class="ornament">' + ICON.house + '</div></div><div class="list">' +
+        '<div class="cat-head"><div class="num">' + ROMAN[k] + '</div><h2>' + esc(c[lang]) + '</h2>' +
+        '<div class="ornament">' + ICON.house + '</div>' +
+        (c.note ? '<p class="cat-note">' + esc(c.note[lang]) + '</p>' : '') +
+        (c.sizes ? '<p class="sizes">' + esc(c.sizes[lang].join(" / ")) + '</p>' : '') +
+        '</div><div class="list">' +
         c.items.map(function (d, di) {
-          var L = d[lang];
+          var n = name(d), q = qty(d.q), sub = note(d);
+          var text = '<div class="info"><div class="line"><h3>' + esc(n) + (q ? ' <span class="qty">' + esc(q) + '</span>' : '') +
+            '</h3><span class="leader"></span><span class="price">' + priceHTML(d.p) + '</span></div>' +
+            (sub ? '<p class="desc">' + esc(sub) + '</p>' : '') +
+            ((d.tags || []).length ? '<div class="marks">' + marksHTML(d.tags) + '</div>' : '') + '</div>';
+          if (!d.img) return '<div class="dish plain">' + text + '</div>';
           return '<button type="button" class="dish" data-c="' + ci + '" data-d="' + di + '">' +
-            '<div class="arch"><img src="images/' + esc(d.img) + '" alt="' + esc(L.n) + '" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=PLACEHOLDER_SRC"></div>' +
-            '<div class="info"><div class="line"><h3>' + esc(L.n) + '</h3><span class="leader"></span><span class="price">' + priceHTML(d.price) + '</span></div>' +
-            '<p class="desc">' + esc(L.d) + '</p>' +
-            ((d.tags || []).length ? '<div class="marks">' + marksHTML(d.tags) + '</div>' : '') +
-            '</div></button>';
+            '<div class="arch"><img src="images/' + esc(d.img) + '" alt="' + esc(n) + '" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=PLACEHOLDER_SRC"></div>' +
+            text + '</button>';
         }).join("") + "</div></section>";
     }).join("");
 
@@ -402,14 +494,15 @@
   document.getElementById("menu").addEventListener("click", function (e) {
     var b = e.target.closest(".dish");
     if (!b) return;
-    var c = window.MENU[b.dataset.c], d = c.items[b.dataset.d], L = d[lang];
+    var c = window.MENU[b.dataset.c], d = c.items[b.dataset.d], n = name(d);
     var img = document.getElementById("d-img");
     img.onerror = function () { img.onerror = null; img.src = window.PLACEHOLDER_SRC; };
-    img.src = "images/" + d.img; img.alt = L.n;
+    img.src = "images/" + d.img; img.alt = n;
     document.getElementById("d-cat").textContent = c[lang];
-    document.getElementById("d-name").textContent = L.n;
-    document.getElementById("d-desc").textContent = L.d;
-    document.getElementById("d-price").innerHTML = priceHTML(d.price);
+    document.getElementById("d-name").textContent = n + (d.q ? " · " + qty(d.q) : "");
+    document.getElementById("d-desc").textContent = note(d) || "";
+    document.getElementById("d-price").innerHTML = priceHTML(d.p) +
+      (c.sizes && Array.isArray(d.p) && d.p[1] != null ? '<div class="sizes">' + esc(c.sizes[lang].join(" / ")) + "</div>" : "");
     document.getElementById("d-marks").innerHTML = marksHTML(d.tags);
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
   });
@@ -433,10 +526,40 @@
     try { localStorage.setItem("lesok-theme", next); } catch (e) {}
   });
 
+  // Category links scroll within the page instead of changing the hash (the hash holds food/drinks)
+  document.getElementById("catnav").addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-cat]");
+    if (!a) return;
+    e.preventDefault();
+    var sec = document.getElementById(a.dataset.cat);
+    if (sec) sec.scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.querySelectorAll(".choice").forEach(function (b) {
+    b.addEventListener("click", function () { openedFromChooser = true; location.hash = b.dataset.group; });
+  });
+  document.getElementById("backBtn").addEventListener("click", function () {
+    if (openedFromChooser) { history.back(); return; }
+    history.replaceState(null, "", location.pathname + location.search);
+    onRoute();
+  });
+
+  function onRoute() {
+    group = currentGroup();
+    if (!group) openedFromChooser = false;
+    render();
+    var target = group ? document.querySelector(".catnav") : document.getElementById("chooser");
+    var y = target.getBoundingClientRect().top + window.scrollY - (group ? 0 : 12);
+    window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+    if (group) swipeHint();
+  }
+  window.addEventListener("hashchange", onRoute);
+
   render();
+  if (group) swipeHint();
 
   // Briefly hint that the category bar can be swiped
-  (function () {
+  function swipeHint() {
     var ul = document.getElementById("catnav"), hint = document.getElementById("swipeHint");
     if (ul.scrollWidth <= ul.clientWidth + 4) return;
     var timer;
@@ -446,7 +569,7 @@
       ul.addEventListener("scroll", hide, { passive: true });
       timer = setTimeout(hide, 8000);
     }, 600);
-  })();
+  }
 })();
 </script>
 </body>

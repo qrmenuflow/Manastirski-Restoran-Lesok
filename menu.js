@@ -1,159 +1,217 @@
 /*
-  МЕНИ / MENU DATA
-  ----------------
-  Edit this file to change dishes and prices. Each dish:
-    img   – file name in the images/ folder
-    price – price in denars (MKD)
-    tags  – optional: "house" (specialty), "veg" (vegetarian), "fast" (posno / fasting)
-    mk/en – name (n) and description (d) in Macedonian and English
-  NOTE: current dishes and prices are DUMMY DATA.
+  МЕНИ / MENU DATA  (source: Meni.pdf from the restaurant)
+  ---------------------------------------------------------
+  Each item:
+    mk / en – dish name in Macedonian / English
+    q       – quantity as written on the menu (e.g. "300 гр.", "0,25 л."); English is converted automatically
+    p       – price in denars:  220            one price
+                                [200, 350]     two prices (e.g. medium / large, glass / bottle)
+                                [150, null]    second size not available (shown as one price)
+                                "ask"          price on request ("по договор")
+    img     – optional photo from the images/ folder
+    dmk/den – optional small note under the name
+  Category options:
+    group – "food" or "drinks" (which start-screen choice shows it)
+    sizes – labels for two-price columns, e.g. medium / large
+    note  – short notice shown under the category title
 */
 window.MENU = [
   {
-    id: "specialties",
-    mk: "Специјалитети на куќата", en: "House Specialties",
+    id: "cold-starters", group: "food", mk: "Ладни предјадења", en: "Cold Starters",
     items: [
-      { img: "tava.jpg", price: 650, tags: ["house"],
-        mk: { n: "Тава Лешочки Манастир", d: "Нашиот специјалитет – свинско и телешко месо, печурки, пиперки и домашни зачини, бавно печено во земјена тава во фурна на дрва." },
-        en: { n: "Lesok Monastery Pan", d: "Our signature dish – pork and veal with mushrooms, peppers and homemade spices, slow-baked in a clay pan in a wood-fired oven." } },
-      { img: "tavce.jpg", price: 280, tags: ["house", "veg", "fast"],
-        mk: { n: "Тетовско тавче гравче", d: "Познатиот тетовски грав, печен во земјено тавче со кромид, црвен пипер и сува нане." },
-        en: { n: "Tetovo Tavče Gravče", d: "The famous Tetovo beans, baked in a clay dish with onion, red paprika and dried mint." } },
-      { img: "piperki.jpg", price: 380, tags: [],
-        mk: { n: "Полнети пиперки", d: "Сушени црвени пиперки полнети со мелено месо и ориз, печени во доматен сос." },
-        en: { n: "Stuffed Peppers", d: "Dried red peppers stuffed with minced meat and rice, baked in tomato sauce." } },
-      { img: "sarma.jpg", price: 360, tags: [],
-        mk: { n: "Сарма", d: "Кисели зелкини листови полнети со мелено месо и ориз, бавно варени со сланина." },
-        en: { n: "Sarma", d: "Sour cabbage leaves stuffed with minced meat and rice, slow-cooked with smoked bacon." } },
-      { img: "musaka.jpg", price: 340, tags: [],
-        mk: { n: "Мусака", d: "Слоеви од компири и мелено месо, прелиени со крем од јајца и млеко." },
-        en: { n: "Moussaka", d: "Layers of potatoes and minced meat topped with a creamy egg and milk custard." } },
-      { img: "gjuvec.jpg", price: 320, tags: ["veg", "fast"],
-        mk: { n: "Монашки ѓувеч", d: "Посен ѓувеч од сезонски зеленчук и ориз, печен во земјена тава." },
-        en: { n: "Monastery Đuveč", d: "A fasting-friendly bake of seasonal vegetables and rice in a clay pot." } }
+      { mk: "Кашкавал кравји", en: "Cow's yellow cheese", q: "100 гр.", p: 150, img: "u_kaskaval_kravji.jpg" },
+      { mk: "Кашкавал овчи", en: "Sheep's yellow cheese", q: "100 гр.", p: 220, img: "u_kaskaval_ovci.jpg" },
+      { mk: "Сирење кравјо", en: "Cow's white cheese", q: "100 гр.", p: 110, img: "u_sirenje_kravjo.jpg" },
+      { mk: "Сирење овчо", en: "Sheep's white cheese", q: "100 гр.", p: 200, img: "u_sirenje_ovco.jpg" },
+      { mk: "Павлака", en: "Sour cream", q: "200 гр.", p: 70 },
+      { mk: "Пинџур", en: "Pinjur", p: 150, img: "u_pindjur.jpg" }
     ]
   },
   {
-    id: "starters",
-    mk: "Предјадења", en: "Starters",
+    id: "hot-starters", group: "food", mk: "Топли предјадења", en: "Hot Starters",
     items: [
-      { img: "ajvar.jpg", price: 180, tags: ["veg", "fast"],
-        mk: { n: "Домашен ајвар", d: "Печени црвени пиперки и модар патлиџан, бавно варени по рецепт на нашите баби." },
-        en: { n: "Homemade Ajvar", d: "Roasted red peppers and aubergine, slow-cooked to our grandmothers' recipe." } },
-      { img: "pindjur.jpg", price: 170, tags: ["veg", "fast"],
-        mk: { n: "Пинџур", d: "Печени пиперки, домати и лук, со ладно цедено масло." },
-        en: { n: "Pinjur", d: "Roasted peppers, tomatoes and garlic with cold-pressed oil." } },
-      { img: "sirenje.jpg", price: 220, tags: ["veg"],
-        mk: { n: "Овчо сирење", d: "Домашно бело сирење од планинските села околу Шар Планина." },
-        en: { n: "Sheep's Cheese", d: "Homemade white brine cheese from the mountain villages of Šar Planina." } },
-      { img: "tursija.jpg", price: 150, tags: ["veg", "fast"],
-        mk: { n: "Мешана туршија", d: "Домашно кисели краставички, пиперки, зелка и морков." },
-        en: { n: "Mixed Turšija", d: "Homemade pickled gherkins, peppers, cabbage and carrots." } },
-      { img: "pastrmajlija.jpg", price: 350, tags: [],
-        mk: { n: "Пастрмајлија", d: "Тесто од фурна на дрва со сушено свинско месо и јајце." },
-        en: { n: "Pastrmajlija", d: "Wood-fired flatbread topped with cured pork and egg." } }
+      { mk: "Похован кашкавал", en: "Breaded yellow cheese", q: "100 гр.", p: 150, img: "u_pohovan_kaskaval.jpg" },
+      { mk: "Поховани тиквици", en: "Breaded zucchini", p: 170 },
+      { mk: "Похована зденка", en: "Breaded cheese wedge", q: "1 парче", p: 30 },
+      { mk: "Похована пиперка", en: "Breaded pepper", q: "1 парче", p: 90 },
+      { mk: "Пирошка", en: "Piroshka", q: "100 гр.", p: 90 },
+      { mk: "Тиквици на скара", en: "Grilled zucchini", q: "100 гр.", p: 150, img: "u_tikvici_skara.jpg" },
+      { mk: "Печурки на скара", en: "Grilled mushrooms", q: "100 гр.", p: 150, img: "u_pecurki_skara.jpg" },
+      { mk: "Сирење на скара", en: "Grilled cheese", q: "100 гр.", p: 200, img: "u_sirenje_skara.jpg" },
+      { mk: "Ролувано сирење", en: "Rolled cheese", q: "100 гр.", p: 220, img: "u_rolovano_sirenje.jpg" },
+      { mk: "Пржено јајце", en: "Fried egg", q: "1 парче", p: 30, img: "u_przeno_jajce.jpg" },
+      { mk: "Омлет микс", en: "Mixed omelette", p: 200, img: "u_omlet.jpg" },
+      { mk: "Англиски доручек", en: "English breakfast", p: 230, img: "u_angliski.jpg" },
+      { mk: "Даска похована", en: "Breaded platter", q: "мала / голема", p: [690, 990], img: "u_daska.jpg" }
     ]
   },
   {
-    id: "salads",
-    mk: "Салати", en: "Salads",
+    id: "salads", group: "food", mk: "Салати", en: "Salads",
+    sizes: { mk: ["средна", "голема"], en: ["medium", "large"] },
     items: [
-      { img: "shopska.jpg", price: 190, tags: ["veg"],
-        mk: { n: "Шопска салата", d: "Домати, краставици, пиперки и кромид, посипани со рендано сирење." },
-        en: { n: "Shopska Salad", d: "Tomatoes, cucumbers, peppers and onion topped with grated white cheese." } },
-      { img: "ovcharska.jpg", price: 210, tags: ["veg"],
-        mk: { n: "Овчарска салата", d: "Свеж зеленчук, варено јајце, шунка, сирење и кашкавал." },
-        en: { n: "Shepherd's Salad", d: "Fresh vegetables with boiled egg, ham, white cheese and yellow cheese." } },
-      { img: "kupus.jpg", price: 140, tags: ["veg", "fast"],
-        mk: { n: "Зелка со морков", d: "Свежо сецкана зелка и морков со оцет и масло." },
-        en: { n: "Cabbage & Carrot Salad", d: "Freshly shredded cabbage and carrot with vinegar and oil." } },
-      { img: "tarator.jpg", price: 160, tags: ["veg"],
-        mk: { n: "Таратор", d: "Ладен јогурт со краставица, лук, ореви и копар." },
-        en: { n: "Tarator", d: "Chilled yogurt with cucumber, garlic, walnuts and dill." } }
+      { mk: "Шопска салата", en: "Shopska salad", p: [200, 350], img: "shopska.jpg" },
+      { mk: "Мешана салата", en: "Mixed salad", p: [200, 350], img: "u_meshana.jpg" },
+      { mk: "Античка салата", en: "Antique salad", p: [250, 400], img: "u_anticka.jpg" },
+      { mk: "Македонска салата", en: "Macedonian salad", p: [200, 350] },
+      { mk: "Таратур салата", en: "Tarator salad", p: [150, null], img: "u_taratur.jpg" },
+      { mk: "Краставица салата", en: "Cucumber salad", p: [120, 180], img: "u_krastavica.jpg" },
+      { mk: "Зелка салата", en: "Cabbage salad", p: [100, 150], img: "u_zelka.jpg" },
+      { mk: "Марула салата", en: "Lettuce salad", p: [90, 140], img: "u_marula.jpg" },
+      { mk: "Цезар салата", en: "Caesar salad", p: [260, null], img: "u_cezar.jpg" },
+      { mk: "Цезар со кашкавал", en: "Caesar with yellow cheese", p: [300, null], img: "u_cezar_kaskaval.jpg" }
     ]
   },
   {
-    id: "grill",
-    mk: "Скара и печено", en: "Grill & Roasts",
+    id: "grill", group: "food", mk: "Главни јадења на скара", en: "Grilled Main Dishes",
     items: [
-      { img: "kebapi.jpg", price: 300, tags: [],
-        mk: { n: "Кебапи (10 парчиња)", d: "Скара кебапи од мешано месо, со свеж кромид и леб од фурна." },
-        en: { n: "Kebapi (10 pcs)", d: "Grilled minced-meat kebapi served with fresh onion and oven bread." } },
-      { img: "pljeskavica.jpg", price: 320, tags: [],
-        mk: { n: "Плескавица", d: "Сочна плескавица од јунешко месо, со ајвар и кромид." },
-        en: { n: "Pljeskavica", d: "Juicy beef patty served with ajvar and onion." } },
-      { img: "raznici.jpg", price: 380, tags: [],
-        mk: { n: "Ражничи", d: "Свински ражничи маринирани со пиперка и мајчина душица." },
-        en: { n: "Ražnjići Skewers", d: "Pork skewers marinated with paprika and wild thyme." } },
-      { img: "jagnesko.jpg", price: 750, tags: ["house"],
-        mk: { n: "Јагнешко печење", d: "Јагнешко месо бавно печено под сач, со печени компири." },
-        en: { n: "Roast Lamb", d: "Lamb slow-roasted under a sač bell, served with roast potatoes." } },
-      { img: "pastrmka.jpg", price: 480, tags: ["fast"],
-        mk: { n: "Пастрмка на скара", d: "Свежа планинска пастрмка на скара, со лук и магдонос." },
-        en: { n: "Grilled Trout", d: "Fresh mountain trout from the grill with garlic and parsley." } },
-      { img: "kolbas.jpg", price: 290, tags: [],
-        mk: { n: "Домашен колбас", d: "Домашен колбас од скара со сенф и туршија." },
-        en: { n: "Homemade Sausage", d: "Grilled homemade sausage with mustard and pickles." } },
-      { img: "mesano.jpg", price: 1200, tags: [],
-        mk: { n: "Мешано месо за двајца", d: "Кебапи, плескавица, ражничи, колбас и пилешко, со помфрит и салата." },
-        en: { n: "Mixed Grill for Two", d: "Kebapi, pljeskavica, skewers, sausage and chicken, with fries and salad." } }
+      { mk: "Плескавица", en: "Pljeskavica", q: "300 гр.", p: 220, img: "u_pleskavica.jpg" },
+      { mk: "Шарска плескавица", en: "Šar pljeskavica", q: "300 гр.", p: 260, img: "u_sarska.jpg" },
+      { mk: "Девојачка плескавица", en: "\"Maiden's\" pljeskavica", q: "300 гр.", p: 260 },
+      { mk: "Шарско-девојачка", en: "Šar-maiden's pljeskavica", q: "300 гр.", p: 300, img: "u_sarsko_devojacka.jpg" },
+      { mk: "Полнета плескавица", en: "Stuffed pljeskavica", q: "300 гр.", p: 300 },
+      { mk: "Бела вешалица", en: "White pork steak", q: "280 гр.", p: 280, img: "u_bela_vesalica.jpg" },
+      { mk: "Вешалица со печурки и кашкавал", en: "Pork steak with mushrooms and yellow cheese", p: 300, img: "u_vesalica_pecurki.jpg" },
+      { mk: "Ролувана вешалица", en: "Rolled pork steak", q: "300 гр.", p: 300, img: "u_rolovana_vesalica.jpg" },
+      { mk: "Пилешки стек", en: "Chicken steak", q: "250 гр.", p: 280, img: "u_pileski_stek.jpg" },
+      { mk: "Стек со печурки и кашкавал", en: "Steak with mushrooms and yellow cheese", q: "250 гр.", p: 300, img: "u_stek_pecurki.jpg" },
+      { mk: "Похован стек", en: "Breaded steak", q: "250 гр.", p: 280, img: "u_pohovan_stek.jpg" },
+      { mk: "Стек во кари сос", en: "Steak in curry sauce", p: 290, img: "u_kari.jpg" },
+      { mk: "Стек во бел сос", en: "Steak in white sauce", p: 290, img: "u_bel_sos.jpg" },
+      { mk: "Пилешки прсти", en: "Chicken fingers", q: "250 гр.", p: 280, img: "u_prsti.jpg" },
+      { mk: "Пилешки батак", en: "Chicken drumstick", q: "220 гр.", p: 270, img: "u_batak.jpg" },
+      { mk: "Пилешки увијач", en: "Chicken roll (uvijač)", q: "300 гр.", p: 300, img: "u_pileski_uvijac.jpg" },
+      { mk: "Свински увијач", en: "Pork roll (uvijač)", q: "300 гр.", p: 300, img: "u_svinski_uvijac.jpg" },
+      { mk: "Двојник", en: "Dvojnik (double portion)", q: "450 гр.", p: 600, img: "u_dvojnik.jpg" },
+      { mk: "Домашно жуле", en: "Homemade žule", q: "200 гр.", p: 200, img: "u_zule.jpg" },
+      { mk: "Бечка шницла", en: "Wiener schnitzel", q: "280 гр.", p: 300, img: "u_pohovan_stek.jpg" },
+      { mk: "Ребро", en: "Ribs", q: "1 кг.", p: 900, img: "u_rebro.jpg" },
+      { mk: "Ребро во фурна", en: "Oven-baked ribs", q: "1 кг.", p: 1300, img: "u_rebro_furna.jpg" },
+      { mk: "Пастрмка", en: "Trout", q: "1 кг.", p: 1300, img: "u_pastrmka.jpg" }
     ]
   },
   {
-    id: "bakery",
-    mk: "Пециво", en: "Bakery",
+    id: "to-order", group: "food", mk: "Јадења по нарачка", en: "Dishes to Order",
+    note: {
+      mk: "Се нарачува 1 ден однапред (24 часа) за да биде подготвено. Цена по договор.",
+      en: "Order 1 day in advance (24 hours) so it can be prepared. Price on request."
+    },
     items: [
-      { img: "zelnik.jpg", price: 250, tags: ["veg"],
-        mk: { n: "Домашен зелник", d: "Рачно развлечени кори со праз и сирење, печени во тепсија." },
-        en: { n: "Homemade Zelnik", d: "Hand-stretched pastry with leek and cheese, baked in a tray." } },
-      { img: "burek.jpg", price: 180, tags: [],
-        mk: { n: "Бурек", d: "Бурек со месо или сирење, се служи со јогурт." },
-        en: { n: "Burek", d: "Burek with meat or cheese, served with yogurt." } },
-      { img: "pogaca.jpg", price: 90, tags: ["veg", "fast"],
-        mk: { n: "Погача од фурна", d: "Топла домашна погача од фурна на дрва." },
-        en: { n: "Oven Bread", d: "Warm homemade bread from the wood-fired oven." } }
+      { mk: "Тава Гравче", en: "Tava Gravče (baked beans)", p: "ask", img: "tavce.jpg" },
+      { mk: "Домашна пита (комат)", en: "Homemade pie (piece)", p: "ask", img: "u_pita.jpg" },
+      { mk: "Печено прасе / Свинско печење", en: "Roast piglet / Roast pork", p: "ask", img: "u_prase.jpg" },
+      { mk: "Тава „Манастирски ресторан“", en: "\"Monastery Restaurant\" pan", p: "ask", img: "u_tava_manastir.jpg" },
+      { mk: "Сарма", en: "Sarma", p: "ask", img: "sarma.jpg" },
+      { mk: "Полнети пиперки", en: "Stuffed peppers", p: "ask", img: "u_polneti_piperki.jpg" },
+      { mk: "Мусака", en: "Moussaka", p: "ask", img: "musaka.jpg" },
+      { mk: "Гулаш", en: "Goulash", p: "ask", img: "u_gulas.jpg" },
+      { mk: "Коленица", en: "Pork knuckle", p: "ask", img: "u_kolenica.jpg" }
     ]
   },
   {
-    id: "desserts",
-    mk: "Десерти", en: "Desserts",
+    id: "nuts", group: "food", mk: "Апетисани", en: "Nuts",
     items: [
-      { img: "baklava.jpg", price: 150, tags: [],
-        mk: { n: "Баклава", d: "Тенки кори со ореви, прелиени со сируп од мед." },
-        en: { n: "Baklava", d: "Thin pastry layers with walnuts, soaked in honey syrup." } },
-      { img: "tulumbi.jpg", price: 120, tags: [],
-        mk: { n: "Тулумби", d: "Пржени тулумби во сладок шербет." },
-        en: { n: "Tulumbi", d: "Fried dough fingers soaked in sweet syrup." } },
-      { img: "kadaif.jpg", price: 150, tags: [],
-        mk: { n: "Кадаиф", d: "Печени тенки нишки од тесто со ореви и шербет." },
-        en: { n: "Kadaif", d: "Baked shredded pastry with walnuts and syrup." } },
-      { img: "palacinki.jpg", price: 160, tags: ["veg"],
-        mk: { n: "Палачинки", d: "Со домашно слатко од шумски овошја или со чоколадо и ореви." },
-        en: { n: "Crêpes", d: "With homemade forest-fruit jam or chocolate and walnuts." } },
-      { img: "sutlijas.jpg", price: 130, tags: ["veg"],
-        mk: { n: "Сутлијаш", d: "Ориз варен во млеко со ванила и цимет." },
-        en: { n: "Rice Pudding", d: "Rice cooked in milk with vanilla and cinnamon." } }
+      { mk: "Лешници", en: "Hazelnuts", q: "100 гр.", p: 200, img: "u_lesnici.jpg" },
+      { mk: "Бадеми", en: "Almonds", q: "100 гр.", p: 180, img: "u_bademi.jpg" },
+      { mk: "Индиски ореви", en: "Cashews", q: "100 гр.", p: 180, img: "u_indiski.jpg" },
+      { mk: "Микс", en: "Mixed nuts", q: "100 гр.", p: 200, img: "u_miks.jpg" }
     ]
   },
   {
-    id: "drinks",
-    mk: "Пијалоци", en: "Drinks",
+    id: "desserts", group: "food", mk: "Десерти", en: "Desserts",
     items: [
-      { img: "kafe.jpg", price: 70, tags: [],
-        mk: { n: "Македонско кафе", d: "Варено во џезве, се служи со локум." },
-        en: { n: "Macedonian Coffee", d: "Brewed in a džezve, served with Turkish delight." } },
-      { img: "limonada.jpg", price: 120, tags: [],
-        mk: { n: "Домашна лимонада", d: "Свежо цеден лимон со нане и планински мед." },
-        en: { n: "Homemade Lemonade", d: "Fresh-squeezed lemon with mint and mountain honey." } },
-      { img: "boza.jpg", price: 80, tags: [],
-        mk: { n: "Боза", d: "Традиционален ферментиран пијалак од жито." },
-        en: { n: "Boza", d: "Traditional fermented grain drink." } },
-      { img: "rakija.jpg", price: 100, tags: [],
-        mk: { n: "Домашна ракија (0,05 л)", d: "Гроздова или сливова ракија од месни производители." },
-        en: { n: "Homemade Rakija (0.05 l)", d: "Grape or plum brandy from local producers." } },
-      { img: "vranec.jpg", price: 900, tags: [],
-        mk: { n: "Вранец (шише 0,75 л)", d: "Полно црвено вино од најпознатата македонска сорта." },
-        en: { n: "Vranec (bottle 0.75 l)", d: "Full-bodied red wine from Macedonia's signature grape." } }
+      { mk: "Палачинка со крем", en: "Crêpe with cream", p: 170, img: "u_palacinka.jpg" },
+      { mk: "Вафла со крем", en: "Waffle with cream", p: 120, img: "u_vafla.jpg" }
+    ]
+  },
+  {
+    id: "hot-drinks", group: "drinks", mk: "Топли напитоци", en: "Hot Drinks",
+    items: [
+      { mk: "Македонско кафе", en: "Macedonian coffee", p: 60, img: "kafe.jpg" },
+      { mk: "Еспресо", en: "Espresso", p: 60 },
+      { mk: "Макијато", en: "Macchiato", p: [60, 70] },
+      { mk: "Ладно макијато", en: "Iced macchiato", p: 90 },
+      { mk: "Капучино", en: "Cappuccino", p: 80 },
+      { mk: "Нес кафе", en: "Nescafé", p: 120 },
+      { mk: "Чај", en: "Tea", p: 60 },
+      { mk: "Млеко", en: "Milk", p: 60 },
+      { mk: "Салеп", en: "Salep", p: 90 },
+      { mk: "Топло чоколадо", en: "Hot chocolate", p: 100 },
+      { mk: "Какао", en: "Cocoa", p: 60 }
+    ]
+  },
+  {
+    id: "soft-drinks", group: "drinks", mk: "Безалкохолни пијалоци", en: "Soft Drinks",
+    items: [
+      { mk: "Пепси Кола", en: "Pepsi Cola", q: "0,25 л.", p: 100 },
+      { mk: "Миринда портокал", en: "Mirinda orange", q: "0,25 л.", p: 100 },
+      { mk: "Миринда лимон", en: "Mirinda lemon", q: "0,25 л.", p: 100 },
+      { mk: "7up", en: "7up", q: "0,25 л.", p: 100 },
+      { mk: "Газоза", en: "Gazoza (lemon soda)", q: "0,25 л.", p: 100 },
+      { mk: "Вода негазирана", en: "Still water", q: "0,25 л. / 0,7 л.", p: [60, 120] },
+      { mk: "Вода газирана", en: "Sparkling water", q: "0,25 л. / 0,7 л.", p: [60, 120] },
+      { mk: "Негазиран сок /Gusto/", en: "Juice /Gusto/", q: "0,2 л.", p: 90,
+        dmk: "портокал, јаболка, боровница, праска", den: "orange, apple, blueberry, peach" },
+      { mk: "Цеден лимон", en: "Fresh lemon juice", q: "0,2 л.", p: 100, img: "limonada.jpg" },
+      { mk: "Цеден портокал", en: "Fresh orange juice", q: "0,2 л.", p: 150 },
+      { mk: "Цеден микс", en: "Fresh mixed juice", q: "0,2 л.", p: 150,
+        dmk: "лимон и портокал", den: "lemon and orange" }
+    ]
+  },
+  {
+    id: "beer", group: "drinks", mk: "Пива", en: "Beer",
+    items: [
+      { mk: "Златен даб", en: "Zlaten Dab", q: "0,3 л. / 0,5 л.", p: 120 },
+      { mk: "Крали Марко", en: "Krali Marko", q: "0,5 л.", p: 120 },
+      { mk: "Туборг", en: "Tuborg", q: "0,33 л.", p: 170 },
+      { mk: "Carlsberg", en: "Carlsberg", q: "0,33 л.", p: 200 },
+      { mk: "Blanc", en: "Blanc", q: "0,3 л.", p: 240 }
+    ]
+  },
+  {
+    id: "wine-white", group: "drinks", mk: "Тиквеш вина – бели", en: "Tikveš Wines – White",
+    items: [
+      { mk: "Смедеревка", en: "Smederevka", q: "0,5 л. / 1 л.", p: [220, 400] },
+      { mk: "Александрија", en: "Alexandria", q: "0,187 л. / 0,7 л.", p: [220, 800] },
+      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", p: 1300 },
+      { mk: "Темјаника", en: "Temjanika", q: "0,187 л. / 0,7 л.", p: [220, 800] },
+      { mk: "Траминец", en: "Traminer", q: "0,187 л. / 0,7 л.", p: [220, 800] }
+    ]
+  },
+  {
+    id: "wine-rose", group: "drinks", mk: "Тиквеш вина – розе", en: "Tikveš Wines – Rosé",
+    items: [
+      { mk: "Тиквеш розе", en: "Tikveš Rosé", q: "0,5 л. / 1 л.", p: [220, 400] },
+      { mk: "Тиквеш розе", en: "Tikveš Rosé", q: "0,187 л. / 0,7 л.", p: [220, 800] },
+      { mk: "Александрија розе", en: "Alexandria Rosé", q: "0,187 л. / 0,7 л.", p: [220, 800] }
+    ]
+  },
+  {
+    id: "wine-red", group: "drinks", mk: "Тиквеш вина – црвени", en: "Tikveš Wines – Red",
+    items: [
+      { mk: "Кратошија", en: "Kratošija", q: "0,5 л. / 1 л.", p: [220, 400] },
+      { mk: "Александрија", en: "Alexandria", q: "0,187 л. / 0,7 л.", p: [220, 800] },
+      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", p: 1300 },
+      { mk: "Т'га за југ", en: "T'ga za Jug", q: "0,187 л. / 0,7 л.", p: [220, 800] }
+    ]
+  },
+  {
+    id: "spirits", group: "drinks", mk: "Жестоки пијалоци", en: "Spirits",
+    items: [
+      { mk: "Тиквешка Жолта", en: "Tikveška Žolta", q: "0,05 л.", p: 100 },
+      { mk: "Мартини", en: "Martini", q: "0,05 л.", p: 130 },
+      { mk: "Бовин класик", en: "Bovin Classic", q: "0,05 л.", p: 100 },
+      { mk: "Марков манастир", en: "Markov Manastir", q: "0,05 л.", p: 140 },
+      { mk: "Свети Трифун", en: "Sveti Trifun", q: "0,05 л.", p: 140 },
+      { mk: "Домашна сливова", en: "Homemade plum brandy", q: "0,05 л.", p: 110 },
+      { mk: "Домашна дуњовача", en: "Homemade quince brandy", q: "0,05 л.", p: 110 },
+      { mk: "Домашна ракија", en: "Homemade rakija", q: "0,05 л.", p: 110, img: "rakija.jpg" },
+      { mk: "Узо 7", en: "Ouzo 7", q: "0,05 л.", p: 100 },
+      { mk: "Узо Плумари", en: "Ouzo Plomari", q: "0,05 л.", p: 120 },
+      { mk: "Мастика", en: "Mastika", q: "0,05 л.", p: 100 },
+      { mk: "Коњак", en: "Cognac", q: "0,05 л.", p: 100 },
+      { mk: "Шток", en: "Stock", q: "0,05 л.", p: 120 },
+      { mk: "Водка Вигор", en: "Vodka Vigor", q: "0,05 л.", p: 100 },
+      { mk: "Водка Смирноф", en: "Vodka Smirnoff", q: "0,05 л.", p: 120 }
     ]
   }
 ];
