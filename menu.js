@@ -36,7 +36,7 @@ window.MENU = [
   {
     id: "hot-starters", group: "food", mk: "Топли предјадења", en: "Hot Starters",
     items: [
-      { mk: "Похован кашкавал", en: "Breaded yellow cheese", q: "100 гр.", p: 150, img: "u_pohovan_kaskaval.jpg",
+      { mk: "Похован кашкавал", en: "Breaded yellow cheese", q: "100 гр.", p: 150, img: "own_pohovan_kaskaval.jpg",
         dmk: "Кашкавал во златна похована кора, се служи со тартар сос.", den: "Yellow cheese in a golden breaded crust, served with tartar sauce." },
       { mk: "Поховани тиквици", en: "Breaded zucchini", img: "u_pohovani_tikvici.jpg", p: 170,
         dmk: "Тенки тиквици во хрскава кора, со лук и кисело млеко.", den: "Thin zucchini in a crispy coating, with garlic yogurt." },
