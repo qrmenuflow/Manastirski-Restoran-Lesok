@@ -211,7 +211,7 @@ window.MENU = [
     items: [
       { mk: "Пепси Кола", en: "Pepsi Cola", q: "0,25 л.", img: "u_pepsi.jpg", p: 100 },
       { mk: "Миринда портокал", en: "Mirinda orange", q: "0,25 л.", img: "u_mirinda_portokal.jpg", p: 100 },
-      { mk: "Миринда лимон", en: "Mirinda lemon", q: "0,25 л.", img: "u_mirinda_limon.jpg", p: 100 },
+      { mk: "Миринда лимон", en: "Mirinda lemon", q: "0,25 л.", img: "own_mirinda_limon.jpg", p: 100 },
       { mk: "7up", en: "7up", q: "0,25 л.", img: "u_sevenup.jpg", p: 100 },
       { mk: "Газоза", en: "Gazoza (lemon soda)", q: "0,25 л.", img: "u_gazoza.jpg", p: 100 },
       { mk: "Вода негазирана", en: "Still water", q: "0,25 л. / 0,7 л.", img: "u_voda.jpg", p: [60, 120] },

@@ -140,3 +140,4 @@ own_rolovana_vesalica.jpg  provided by the user
 lesok_*.jpg  from the restaurant's own Instagram (@manastirskirestoran)
 own_prsti.jpg  provided by the user
 own_stek_pecurki.jpg  provided by the user
+own_mirinda_limon.jpg  provided by the user (product photo)
