@@ -50,7 +50,7 @@ window.MENU = [
         dmk: "Тиквици печени на скара со маслиново масло и лук.", den: "Grilled zucchini with olive oil and garlic." },
       { mk: "Печурки на скара", en: "Grilled mushrooms", q: "100 гр.", p: 150, img: "u_pecurki_skara.jpg",
         dmk: "Свежи печурки на скара со лук и магдонос.", den: "Fresh grilled mushrooms with garlic and parsley." },
-      { mk: "Сирење на скара", en: "Grilled cheese", q: "100 гр.", p: 200, img: "u_sirenje_skara.jpg",
+      { mk: "Сирење на скара", en: "Grilled cheese", q: "100 гр.", p: 200, img: "own_sirenje_skara.jpg",
         dmk: "Сирење печено на скара, со малку маслиново масло и пипер.", den: "Grilled cheese with a drizzle of olive oil and pepper." },
       { mk: "Роловано сирење", en: "Rolled cheese", q: "100 гр.", p: 220, img: "u_rolovano_sirenje.jpg",
         dmk: "Сирење завиткано во сланина, печено на скара.", den: "Cheese wrapped in bacon, grilled." },
