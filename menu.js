@@ -44,7 +44,7 @@ window.MENU = [
         dmk: "Топено сирење зденка во хрскава похована кора.", den: "Zdenka processed cheese wedge in a crispy breaded coating." },
       { mk: "Похована пиперка", en: "Breaded pepper", q: "1 парче", img: "u_pohovana_piperka.jpg", p: 90,
         dmk: "Пиперка полнета со сирење, пржена во хрскава кора.", den: "Pepper stuffed with cheese, fried in a crispy coating." },
-      { mk: "Пирошка", en: "Piroshka", q: "100 гр.", img: "u_piroska.jpg", p: 90,
+      { mk: "Пирошка", en: "Piroshka", q: "100 гр.", img: "own_piroska.webp", p: 90,
         dmk: "Похована палачинка полнета со шунка и кашкавал.", den: "Breaded crêpe roll filled with ham and yellow cheese." },
       { mk: "Тиквици на скара", en: "Grilled zucchini", q: "100 гр.", p: 150, img: "u_tikvici_skara.jpg",
         dmk: "Тиквици печени на скара со маслиново масло и лук.", den: "Grilled zucchini with olive oil and garlic." },

@@ -113,3 +113,4 @@ u_vodka_smirnoff.jpg  https://images.unsplash.com/photo-1550985543-f47f38aeee65
 w_shopska.jpg  Wikimedia Commons File:Chopska.jpg (Popo le Chien, CC0)
 w_sarma.jpg  Wikimedia Commons, Shixart1985, CC BY 2.0
 own_pavlaka.jpg  provided by the user
+own_piroska.webp  provided by the user
