@@ -139,6 +139,8 @@
   .choice .go { position: absolute; right: 22px; bottom: 24px; width: 44px; height: 44px; border-radius: 50%;
     display: grid; place-items: center; border: 1px solid rgba(244,236,217,.5); }
   .choice .go svg { width: 18px; height: 18px; }
+  .credit { font-size: 10.5px; color: var(--faint); margin: 14px 0 0; }
+  .credit:empty { display: none; }
 
   /* Swipe hint – shown for a few seconds when the bar overflows */
   .swipe-hint {
@@ -309,12 +311,12 @@
     <div class="choices">
       <button type="button" class="choice" data-group="food">
         <img src="images/choose_food.jpg" alt="">
-        <span class="ttl" data-i18n="food"></span><span class="sub" data-i18n="foodSub"></span>
+        <span class="ttl" data-i18n="food"></span>
         <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
       <button type="button" class="choice" data-group="drinks">
         <img src="images/choose_drinks.jpg" alt="">
-        <span class="ttl" data-i18n="drinks"></span><span class="sub" data-i18n="drinksSub"></span>
+        <span class="ttl" data-i18n="drinks"></span>
         <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
     </div>
@@ -330,8 +332,6 @@
   <h3 data-i18n="title"></h3>
   <p data-i18n="address"></p>
   <p><a href="tel:+38944382666">+389 44 382 666</a></p>
-  <p class="small" data-i18n="prices"></p>
-  <p class="small" style="margin-top:4px" data-i18n="credits"></p>
 </footer>
 
 <dialog id="detail" aria-labelledby="d-name">
@@ -346,6 +346,7 @@
     <p class="desc" id="d-desc"></p>
     <div class="price" id="d-price"></div>
     <div class="marks" id="d-marks"></div>
+    <p class="credit" id="d-credit"></p>
   </div>
 </dialog>
 
@@ -504,6 +505,7 @@
     document.getElementById("d-price").innerHTML = priceHTML(d.p) +
       (c.sizes && Array.isArray(d.p) && d.p[1] != null ? '<div class="sizes">' + esc(c.sizes[lang].join(" / ")) + "</div>" : "");
     document.getElementById("d-marks").innerHTML = marksHTML(d.tags);
+    document.getElementById("d-credit").textContent = d.credit || "";
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
   });
   document.getElementById("d-close").addEventListener("click", function () { dlg.close ? dlg.close() : dlg.removeAttribute("open"); });
