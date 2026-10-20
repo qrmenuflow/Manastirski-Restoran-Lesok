@@ -111,7 +111,7 @@ window.MENU = [
         dmk: "Свински врат ролуван со кашкавал и шунка.", den: "Pork neck rolled with yellow cheese and ham." },
       { mk: "Пилешки стек", en: "Chicken steak", q: "250 гр.", p: 280, img: "lesok_pileski_stek.jpg",
         dmk: "Пилешки гради на скара.", den: "Grilled chicken breast." },
-      { mk: "Стек со печурки и кашкавал", en: "Steak with mushrooms and yellow cheese", q: "250 гр.", p: 300, img: "u_stek_pecurki.jpg",
+      { mk: "Стек со печурки и кашкавал", en: "Steak with mushrooms and yellow cheese", q: "250 гр.", p: 300, img: "own_stek_pecurki.jpg",
         dmk: "Пилешки стек прелиен со печурки и стопен кашкавал.", den: "Chicken steak topped with mushrooms and melted yellow cheese." },
       { mk: "Похован стек", en: "Breaded steak", q: "250 гр.", p: 280, img: "u_pohovan_stek.jpg",
         dmk: "Пилешки стек во хрскава похована кора.", den: "Chicken steak in a crispy breaded crust." },
