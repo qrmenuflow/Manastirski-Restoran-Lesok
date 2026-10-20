@@ -38,7 +38,7 @@ window.MENU = [
     items: [
       { mk: "Похован кашкавал", en: "Breaded yellow cheese", q: "100 гр.", p: 150, img: "own_pohovan_kaskaval.jpg",
         dmk: "Кашкавал во златна похована кора, се служи со тартар сос.", den: "Yellow cheese in a golden breaded crust, served with tartar sauce." },
-      { mk: "Поховани тиквици", en: "Breaded zucchini", img: "u_pohovani_tikvici.jpg", p: 170,
+      { mk: "Поховани тиквици", en: "Breaded zucchini", img: "own_pohovani_tikvici.jpg", p: 170,
         dmk: "Тенки тиквици во хрскава кора, со лук и кисело млеко.", den: "Thin zucchini in a crispy coating, with garlic yogurt." },
       { mk: "Похована зденка", en: "Breaded cheese wedge", q: "1 парче", img: "own_zdenka.jpg", p: 30,
         dmk: "Топено сирење зденка во хрскава похована кора.", den: "Zdenka processed cheese wedge in a crispy breaded coating." },
@@ -70,7 +70,7 @@ window.MENU = [
     items: [
       { mk: "Шопска салата", en: "Shopska salad", p: [200, 350], img: "w_shopska.jpg",
         dmk: "Домати, краставици, пиперки и кромид, покриени со рендано сирење.", den: "Tomatoes, cucumbers, peppers and onion, topped with grated white cheese." },
-      { mk: "Мешана салата", en: "Mixed salad", p: [200, 350], img: "u_meshana.jpg",
+      { mk: "Мешана салата", en: "Mixed salad", p: [200, 350], img: "own_meshana.jpg",
         dmk: "Домати, краставици, зелка, морков и марула.", den: "Tomatoes, cucumbers, cabbage, carrot and lettuce." },
       { mk: "Античка салата", en: "Antique salad", p: [250, 400], img: "u_anticka.jpg",
         dmk: "Домати, краставици, маслинки, кромид и парче сирење со оригано.", den: "Tomatoes, cucumbers, olives, onion and a slab of white cheese with oregano." },
@@ -265,7 +265,7 @@ window.MENU = [
     id: "spirits", group: "drinks", mk: "Жестоки пијалоци", en: "Spirits",
     items: [
       { mk: "Тиквешка Жолта", en: "Tikveška Žolta", q: "0,05 л.", img: "u_shot.jpg", p: 100 },
-      { mk: "Мартини", en: "Martini", q: "0,05 л.", img: "u_martini.jpg", p: 130 },
+      { mk: "Мартини", en: "Martini", q: "0,05 л.", img: "own_martini.jpg", p: 130 },
       { mk: "Бовин класик", en: "Bovin Classic", q: "0,05 л.", img: "u_shot.jpg", p: 100 },
       { mk: "Марков манастир", en: "Markov Manastir", q: "0,05 л.", img: "u_shot.jpg", p: 140 },
       { mk: "Свети Трифун", en: "Sveti Trifun", q: "0,05 л.", img: "u_shot.jpg", p: 140 },
