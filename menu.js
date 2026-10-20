@@ -164,7 +164,7 @@ window.MENU = [
         dmk: "Слоеви од компири и мелено месо, печени со крем.", den: "Layers of potatoes and minced meat, baked with a creamy topping." },
       { mk: "Гулаш", en: "Goulash", p: "ask", img: "own_gulas.jpg",
         dmk: "Бавно варено месо во густ сос со пиперка.", den: "Slow-cooked meat in a rich paprika sauce." },
-      { mk: "Коленица", en: "Pork knuckle", p: "ask", img: "u_kolenica.jpg",
+      { mk: "Коленица", en: "Pork knuckle", p: "ask", img: "own_kolenica.jpg",
         dmk: "Свинска коленица бавно печена до мекост.", den: "Pork knuckle slow-roasted until tender." }
     ]
   },
