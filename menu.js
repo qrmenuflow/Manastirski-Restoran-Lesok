@@ -27,7 +27,7 @@ window.MENU = [
         dmk: "Бело саламурено кравјо сирење.", den: "White brined cow's milk cheese." },
       { mk: "Сирење овчо", en: "Sheep's white cheese", q: "100 гр.", p: 200, img: "u_sirenje_ovco.jpg",
         dmk: "Домашно бело овчо сирење, кремасто и солено.", den: "Homemade white sheep's milk cheese, creamy and salty." },
-      { mk: "Павлака", en: "Sour cream", q: "200 гр.", p: 70,
+      { mk: "Павлака", en: "Sour cream", q: "200 гр.", img: "own_pavlaka.jpg", p: 70,
         dmk: "Густа домашна павлака, идеална со леб и скара.", den: "Thick homemade sour cream, perfect with bread and grilled dishes." },
       { mk: "Пинџур", en: "Pinjur", p: 150, img: "u_pindjur.jpg",
         dmk: "Печени пиперки, домати и лук, ситно сецкани со масло.", den: "Roasted peppers, tomatoes and garlic, finely chopped with oil." }
