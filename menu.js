@@ -158,7 +158,7 @@ window.MENU = [
         dmk: "Специјалитет на куќата – месо и зеленчук печени во земјена тава.", den: "House specialty – meat and vegetables baked in a clay pan." },
       { mk: "Сарма", en: "Sarma", p: "ask", img: "w_sarma.jpg", credit: "Photo: Shixart1985 / Wikimedia Commons, CC BY 2.0",
         dmk: "Кисели зелкини листови полнети со месо и ориз.", den: "Sour cabbage leaves stuffed with meat and rice." },
-      { mk: "Полнети пиперки", en: "Stuffed peppers", p: "ask", img: "u_polneti_piperki.jpg",
+      { mk: "Полнети пиперки", en: "Stuffed peppers", p: "ask", img: "own_polneti_piperki.jpg",
         dmk: "Пиперки полнети со мелено месо и ориз, во доматен сос.", den: "Peppers stuffed with minced meat and rice in tomato sauce." },
       { mk: "Мусака", en: "Moussaka", p: "ask", img: "u_musaka.jpg",
         dmk: "Слоеви од компири и мелено месо, печени со крем.", den: "Layers of potatoes and minced meat, baked with a creamy topping." },
