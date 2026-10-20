@@ -137,3 +137,4 @@ own_zule.jpg  provided by the user
 own_bel_sos.jpg  provided by the user
 own_kari.jpg  provided by the user
 own_rolovana_vesalica.jpg  provided by the user
+lesok_*.jpg  from the restaurant's own Instagram (@manastirskirestoran)
