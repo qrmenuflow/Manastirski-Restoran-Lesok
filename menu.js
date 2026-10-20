@@ -107,7 +107,7 @@ window.MENU = [
         dmk: "Свински врат на скара, сочен и благо зачинет.", den: "Grilled pork neck steak, juicy and lightly seasoned." },
       { mk: "Вешалица со печурки и кашкавал", en: "Pork steak with mushrooms and yellow cheese", p: 300, img: "u_vesalica_pecurki.jpg",
         dmk: "Свински врат на скара, прелиен со печурки и стопен кашкавал.", den: "Grilled pork neck topped with mushrooms and melted yellow cheese." },
-      { mk: "Ролована вешалица", en: "Rolled pork steak", q: "300 гр.", p: 300, img: "u_rolovana_vesalica.jpg",
+      { mk: "Ролована вешалица", en: "Rolled pork steak", q: "300 гр.", p: 300, img: "own_rolovana_vesalica.jpg",
         dmk: "Свински врат ролуван со кашкавал и шунка.", den: "Pork neck rolled with yellow cheese and ham." },
       { mk: "Пилешки стек", en: "Chicken steak", q: "250 гр.", p: 280, img: "own_pileski_stek.jpg",
         dmk: "Пилешки гради на скара.", den: "Grilled chicken breast." },
