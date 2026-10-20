@@ -40,7 +40,7 @@ window.MENU = [
         dmk: "Кашкавал во златна похована кора, се служи со тартар сос.", den: "Yellow cheese in a golden breaded crust, served with tartar sauce." },
       { mk: "Поховани тиквици", en: "Breaded zucchini", img: "u_pohovani_tikvici.jpg", p: 170,
         dmk: "Тенки тиквици во хрскава кора, со лук и кисело млеко.", den: "Thin zucchini in a crispy coating, with garlic yogurt." },
-      { mk: "Похована зденка", en: "Breaded cheese wedge", q: "1 парче", img: "u_zdenka.jpg", p: 30,
+      { mk: "Похована зденка", en: "Breaded cheese wedge", q: "1 парче", img: "own_zdenka.jpg", p: 30,
         dmk: "Топено сирење зденка во хрскава похована кора.", den: "Zdenka processed cheese wedge in a crispy breaded coating." },
       { mk: "Похована пиперка", en: "Breaded pepper", q: "1 парче", img: "u_pohovana_piperka.jpg", p: 90,
         dmk: "Пиперка полнета со сирење, пржена во хрскава кора.", den: "Pepper stuffed with cheese, fried in a crispy coating." },
