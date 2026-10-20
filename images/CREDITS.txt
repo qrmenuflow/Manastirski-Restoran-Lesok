@@ -145,3 +145,4 @@ own_gazoza.jpg  provided by the user (product photo)
 own_voda_gaz.jpg  provided by the user
 own_uzo.jpg  provided by the user
 own_polneti_piperki.jpg  provided by the user
+own_mirinda_portokal.jpg  provided by the user
