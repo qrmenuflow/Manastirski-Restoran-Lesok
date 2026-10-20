@@ -115,7 +115,7 @@ window.MENU = [
         dmk: "Пилешки стек прелиен со печурки и стопен кашкавал.", den: "Chicken steak topped with mushrooms and melted yellow cheese." },
       { mk: "Похован стек", en: "Breaded steak", q: "250 гр.", p: 280, img: "u_pohovan_stek.jpg",
         dmk: "Пилешки стек во хрскава похована кора.", den: "Chicken steak in a crispy breaded crust." },
-      { mk: "Стек во кари сос", en: "Steak in curry sauce", p: 290, img: "u_kari.jpg",
+      { mk: "Стек во кари сос", en: "Steak in curry sauce", p: 290, img: "own_kari.jpg",
         dmk: "Пилешки стек во кремаст кари сос.", den: "Chicken steak in a creamy curry sauce." },
       { mk: "Стек во бел сос", en: "Steak in white sauce", p: 290, img: "own_bel_sos.jpg",
         dmk: "Пилешки стек во кремаст бел сос со печурки.", den: "Chicken steak in a creamy white mushroom sauce." },
