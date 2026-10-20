@@ -202,7 +202,7 @@ window.MENU = [
       { mk: "Чај", en: "Tea", img: "own_caj.jpg", p: 60 },
       { mk: "Млеко", en: "Milk", img: "u_mleko.jpg", p: 60 },
       { mk: "Салеп", en: "Salep", img: "u_salep.jpg", p: 90 },
-      { mk: "Топло чоколадо", en: "Hot chocolate", img: "u_cokolado.jpg", p: 100 },
+      { mk: "Топло чоколадо", en: "Hot chocolate", img: "own_cokolado.jpg", p: 100 },
       { mk: "Какао", en: "Cocoa", img: "u_kakao.jpg", p: 60 }
     ]
   },
