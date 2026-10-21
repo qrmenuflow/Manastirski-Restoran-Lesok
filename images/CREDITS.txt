@@ -161,3 +161,4 @@ own_alexandria_cuvee_belo.webp  provided by the user (Tikveš product photo)
 own_alexandria_cuvee_crveno.webp  provided by the user (Tikveš product photo)
 own_zelka.webp  provided by the user
 own_krastavica.webp  provided by the user
+own_devojacka.webp  provided by the user
