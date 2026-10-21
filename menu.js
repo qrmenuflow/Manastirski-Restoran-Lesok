@@ -101,7 +101,7 @@ window.MENU = [
         dmk: "Плескавица со кашкавал и парчиња месо.", den: "Patty with yellow cheese and pieces of meat." },
       { mk: "Шарско-девојачка", en: "Šar-maiden's pljeskavica", q: "300 гр.", p: 300, img: "u_sarsko_devojacka.webp",
         dmk: "Комбинација од шарска и девојачка плескавица.", den: "A combination of Šar and \"maiden's\" patties." },
-      { mk: "Полнета плескавица", en: "Stuffed pljeskavica", q: "300 гр.", img: "u_polneta.webp", p: 300,
+      { mk: "Полнета плескавица", en: "Stuffed pljeskavica", q: "300 гр.", img: "own_polneta.webp", p: 300,
         dmk: "Плескавица полнета со кашкавал, печена на скара.", den: "Grilled patty stuffed with melted yellow cheese." },
       { mk: "Бела вешалица", en: "White pork steak", q: "280 гр.", p: 280, img: "u_bela_vesalica.webp",
         dmk: "Свински врат на скара, сочен и благо зачинет.", den: "Grilled pork neck steak, juicy and lightly seasoned." },
