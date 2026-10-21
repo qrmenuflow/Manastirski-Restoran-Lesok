@@ -149,3 +149,6 @@ own_mirinda_portokal.webp  provided by the user
 own_angliski.webp  provided by the user
 choose_food.webp  https://images.unsplash.com/photo-1614277786110-1a64e457c4c3
 choose_drinks.webp  https://images.unsplash.com/photo-1474722883778-792e7990302f
+own_zestoko.webp  provided by the user
+own_vodka.webp  provided by the user
+own_pepsi.webp  provided by the user

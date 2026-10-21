@@ -209,7 +209,7 @@ window.MENU = [
   {
     id: "soft-drinks", group: "drinks", mk: "Безалкохолни пијалоци", en: "Soft Drinks",
     items: [
-      { mk: "Пепси Кола", en: "Pepsi Cola", q: "0,25 л.", img: "u_pepsi.webp", p: 100 },
+      { mk: "Пепси Кола", en: "Pepsi Cola", q: "0,25 л.", img: "own_pepsi.webp", p: 100 },
       { mk: "Миринда портокал", en: "Mirinda orange", q: "0,25 л.", img: "own_mirinda_portokal.webp", p: 100 },
       { mk: "Миринда лимон", en: "Mirinda lemon", q: "0,25 л.", img: "own_mirinda_limon.webp", p: 100 },
       { mk: "7up", en: "7up", q: "0,25 л.", img: "u_sevenup.webp", p: 100 },
@@ -264,21 +264,21 @@ window.MENU = [
   {
     id: "spirits", group: "drinks", mk: "Жестоки пијалоци", en: "Spirits",
     items: [
-      { mk: "Тиквешка Жолта", en: "Tikveška Žolta", q: "0,05 л.", img: "u_shot.webp", p: 100 },
+      { mk: "Тиквешка Жолта", en: "Tikveška Žolta", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
       { mk: "Мартини", en: "Martini", q: "0,05 л.", img: "own_martini.webp", p: 130 },
-      { mk: "Бовин класик", en: "Bovin Classic", q: "0,05 л.", img: "u_shot.webp", p: 100 },
-      { mk: "Марков манастир", en: "Markov Manastir", q: "0,05 л.", img: "u_shot.webp", p: 140 },
-      { mk: "Свети Трифун", en: "Sveti Trifun", q: "0,05 л.", img: "u_shot.webp", p: 140 },
-      { mk: "Домашна сливова", en: "Homemade plum brandy", q: "0,05 л.", img: "u_shot.webp", p: 110 },
-      { mk: "Домашна дуњовача", en: "Homemade quince brandy", q: "0,05 л.", img: "u_shot.webp", p: 110 },
-      { mk: "Домашна ракија", en: "Homemade rakija", q: "0,05 л.", p: 110, img: "u_shot.webp" },
+      { mk: "Бовин класик", en: "Bovin Classic", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
+      { mk: "Марков манастир", en: "Markov Manastir", q: "0,05 л.", img: "own_zestoko.webp", p: 140 },
+      { mk: "Свети Трифун", en: "Sveti Trifun", q: "0,05 л.", img: "own_zestoko.webp", p: 140 },
+      { mk: "Домашна сливова", en: "Homemade plum brandy", q: "0,05 л.", img: "own_zestoko.webp", p: 110 },
+      { mk: "Домашна дуњовача", en: "Homemade quince brandy", q: "0,05 л.", img: "own_zestoko.webp", p: 110 },
+      { mk: "Домашна ракија", en: "Homemade rakija", q: "0,05 л.", p: 110, img: "own_zestoko.webp" },
       { mk: "Узо 7", en: "Ouzo 7", q: "0,05 л.", img: "own_uzo.webp", p: 100 },
       { mk: "Узо Плумари", en: "Ouzo Plomari", q: "0,05 л.", img: "own_uzo.webp", p: 120 },
-      { mk: "Мастика", en: "Mastika", q: "0,05 л.", img: "u_shots.webp", p: 100 },
-      { mk: "Коњак", en: "Cognac", q: "0,05 л.", img: "u_konjak.webp", p: 100 },
-      { mk: "Шток", en: "Stock", q: "0,05 л.", img: "u_shot.webp", p: 120 },
-      { mk: "Водка Вигор", en: "Vodka Vigor", q: "0,05 л.", img: "u_vodka_shots.webp", p: 100 },
-      { mk: "Водка Смирноф", en: "Vodka Smirnoff", q: "0,05 л.", img: "u_vodka_smirnoff.webp", p: 120 }
+      { mk: "Мастика", en: "Mastika", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
+      { mk: "Коњак", en: "Cognac", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
+      { mk: "Шток", en: "Stock", q: "0,05 л.", img: "own_zestoko.webp", p: 120 },
+      { mk: "Водка Вигор", en: "Vodka Vigor", q: "0,05 л.", img: "own_vodka.webp", p: 100 },
+      { mk: "Водка Смирноф", en: "Vodka Smirnoff", q: "0,05 л.", img: "own_vodka.webp", p: 120 }
     ]
   }
 ];
