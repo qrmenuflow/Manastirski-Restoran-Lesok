@@ -121,7 +121,7 @@ window.MENU = [
         dmk: "Пилешки стек во кремаст бел сос со печурки.", den: "Chicken steak in a creamy white mushroom sauce." },
       { mk: "Пилешки прсти", en: "Chicken fingers", q: "250 гр.", p: 280, img: "own_prsti.webp",
         dmk: "Хрскави поховани пилешки ленти со сос.", den: "Crispy breaded chicken strips with dip." },
-      { mk: "Пилешки батак", en: "Chicken drumstick", q: "220 гр.", p: 270, img: "u_batak.webp",
+      { mk: "Пилешки батак", en: "Chicken drumstick", q: "220 гр.", p: 270, img: "own_batak.webp",
         dmk: "Пилешки батак на скара, маринирани со зачини.", den: "Grilled chicken drumsticks marinated with spices." },
       { mk: "Пилешки увијач", en: "Chicken roll (uvijač)", q: "300 гр.", p: 300, img: "u_pileski_uvijac.webp",
         dmk: "Пилешко месо завиткано со кашкавал и сланина.", den: "Chicken rolled with yellow cheese and bacon." },
