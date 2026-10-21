@@ -265,7 +265,6 @@ window.MENU = [
     id: "spirits", group: "drinks", mk: "Жестоки пијалоци", en: "Spirits",
     items: [
       { mk: "Тиквешка Жолта", en: "Tikveška Žolta", q: "0,05 л.", img: "own_rakija_1.webp", p: 100 },
-      { mk: "Мартини", en: "Martini", q: "0,05 л.", img: "own_martini.webp", p: 130 },
       { mk: "Бовин класик", en: "Bovin Classic", q: "0,05 л.", img: "own_rakija_2.webp", p: 100 },
       { mk: "Марков манастир", en: "Markov Manastir", q: "0,05 л.", img: "own_rakija_1.webp", p: 140 },
       { mk: "Свети Трифун", en: "Sveti Trifun", q: "0,05 л.", img: "own_rakija_2.webp", p: 140 },
@@ -274,11 +273,12 @@ window.MENU = [
       { mk: "Домашна ракија", en: "Homemade rakija", q: "0,05 л.", p: 110, img: "own_rakija_1.webp" },
       { mk: "Узо 7", en: "Ouzo 7", q: "0,05 л.", img: "own_uzo.webp", p: 100 },
       { mk: "Узо Плумари", en: "Ouzo Plomari", q: "0,05 л.", img: "own_uzo.webp", p: 120 },
-      { mk: "Мастика", en: "Mastika", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
+      { mk: "Мастика", en: "Mastika", q: "0,05 л.", img: "own_rakija_2.webp", p: 100 },
       { mk: "Коњак", en: "Cognac", q: "0,05 л.", img: "own_zestoko.webp", p: 100 },
       { mk: "Шток", en: "Stock", q: "0,05 л.", img: "own_zestoko.webp", p: 120 },
       { mk: "Водка Вигор", en: "Vodka Vigor", q: "0,05 л.", img: "own_vodka.webp", p: 100 },
-      { mk: "Водка Смирноф", en: "Vodka Smirnoff", q: "0,05 л.", img: "own_vodka.webp", p: 120 }
+      { mk: "Водка Смирноф", en: "Vodka Smirnoff", q: "0,05 л.", img: "own_vodka.webp", p: 120 },
+      { mk: "Мартини", en: "Martini", q: "0,05 л.", img: "own_martini.webp", p: 130 }
     ]
   }
 ];
