@@ -3,15 +3,15 @@
 
 ГЛАВЕН (КОМЕРЦИЈАЛЕН) САЈТ – ОВА ГО КОРИСТИМЕ:
 
-    https://digitalno-meni.manastirski-restoran.pages.dev
+    https://manastirski-restoran-lesok-digitalno-meni.pages.dev
 
-  - На оваа адреса води QR кодот што се печати и се става на масите.
-  - Хостинг: Cloudflare Pages, проект "manastirski-restoran" (бесплатно, дозволена комерцијална употреба).
-  - Истото мени е достапно и на https://manastirski-restoran.pages.dev (истиот проект, не се брише одделно).
+  - На оваа адреса води QR кодот што се печати / гравира и се става на масите.
+  - Хостинг: Cloudflare Pages, проект "manastirski-restoran-lesok-digitalno-meni" (бесплатно, дозволена комерцијална употреба).
+  - Долгото име е намерно: при скенирање телефонот го скратува крајот (".pages.dev").
   - QR код за печатење: QR-ЗА-ПЕЧАТЕЊЕ-6x6cm.png (6 x 6 cm, 600 dpi, печати на 100% / вистинска големина).
 
 НЕ БРИШИ:
-  - Cloudflare проектот "manastirski-restoran" (dash.cloudflare.com -> Workers & Pages).
+  - Cloudflare проектот "manastirski-restoran-lesok-digitalno-meni" (dash.cloudflare.com -> Workers & Pages).
     Ако се избрише, QR кодот на масите престанува да работи.
   - Папката C:\Users\Dell\lesok-menu (index.html, menu.js, images) – од тука се менува менито.
 
@@ -19,6 +19,8 @@
   - QR кодот НЕ се менува. Се менува само менито и се објавува на истата адреса.
 
 ДРУГИ (СТАРИ / РЕЗЕРВНИ) АДРЕСИ – НЕ СЕ ЗА ПЕЧАТЕЊЕ:
+  - https://manastirski-restoran.pages.dev     (претходна)
+  - https://digitalno-meni.manastirski-restoran.pages.dev (претходна)
   - https://digitalmenu.lesok.pages.dev        (стар QR код – остава се за старите налепници)
   - https://lesok.pages.dev                    (стара)
   - https://manastirski-restoran.onrender.com  (резерва на Render – мора рачно "Manual Deploy" по секоја промена)
