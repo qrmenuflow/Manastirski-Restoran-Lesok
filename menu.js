@@ -239,7 +239,7 @@ window.MENU = [
     items: [
       { mk: "Смедеревка", en: "Smederevka", q: "0,5 л. / 1 л.", img: "u_belo_1.webp", p: [220, 400] },
       { mk: "Александрија", en: "Alexandria", q: "0,187 л. / 0,7 л.", img: "u_belo_2.webp", p: [220, 800] },
-      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", img: "u_belo_3.webp", p: 1300 },
+      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", img: "own_alexandria_cuvee_belo.webp", p: 1300 },
       { mk: "Темјаника", en: "Temjanika", q: "0,187 л. / 0,7 л.", img: "u_belo_4.webp", p: [220, 800] },
       { mk: "Траминец", en: "Traminer", q: "0,187 л. / 0,7 л.", img: "u_belo_1.webp", p: [220, 800] }
     ]
@@ -257,7 +257,7 @@ window.MENU = [
     items: [
       { mk: "Кратошија", en: "Kratošija", q: "0,5 л. / 1 л.", img: "u_crveno_1.webp", p: [220, 400] },
       { mk: "Александрија", en: "Alexandria", q: "0,187 л. / 0,7 л.", img: "u_crveno_2.webp", p: [220, 800] },
-      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", img: "u_crveno_3.webp", p: 1300 },
+      { mk: "Александрија cuvee", en: "Alexandria Cuvée", q: "0,7 л.", img: "own_alexandria_cuvee_crveno.webp", p: 1300 },
       { mk: "Т'га за југ", en: "T'ga za Jug", q: "0,187 л. / 0,7 л.", img: "u_crveno_4.webp", p: [220, 800] }
     ]
   },

@@ -156,3 +156,5 @@ own_pivo_carlsberg.webp  provided by the user
 own_pivo_blanc.webp  provided by the user
 own_pivo_krali.webp  provided by the user
 own_pivo_zlaten.webp  provided by the user
+own_alexandria_cuvee_belo.webp  provided by the user (Tikveš product photo)
+own_alexandria_cuvee_crveno.webp  provided by the user (Tikveš product photo)
