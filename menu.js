@@ -78,7 +78,7 @@ window.MENU = [
         dmk: "Печени пиперки, домати, кромид и магдонос.", den: "Roasted peppers, tomatoes, onion and parsley." },
       { mk: "Таратур салата", en: "Tarator salad", p: [150, null], img: "own_taratur.webp",
         dmk: "Кисело млеко со краставица, лук и копар.", den: "Yogurt with cucumber, garlic and dill." },
-      { mk: "Краставица салата", en: "Cucumber salad", p: [120, 180], img: "u_krastavica.webp",
+      { mk: "Краставица салата", en: "Cucumber salad", p: [120, 180], img: "own_krastavica.webp",
         dmk: "Свежи краставици со оцет и масло.", den: "Fresh cucumbers with vinegar and oil." },
       { mk: "Зелка салата", en: "Cabbage salad", p: [100, 150], img: "own_zelka.webp",
         dmk: "Свежо сецкана зелка со оцет и масло.", den: "Freshly shredded cabbage with vinegar and oil." },
