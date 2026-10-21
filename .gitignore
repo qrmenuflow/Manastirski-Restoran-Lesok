@@ -10,3 +10,4 @@ dist/
 !.env.example
 .wrangler/
 preview-states.html
+frame-test.html

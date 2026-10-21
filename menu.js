@@ -58,7 +58,7 @@ window.MENU = [
         dmk: "Јајце пржено на око.", den: "Fried egg, sunny side up." },
       { mk: "Омлет микс", en: "Mixed omelette", p: 200, img: "u_omlet.webp",
         dmk: "Омлет со шунка, кашкавал, печурки и зеленчук.", den: "Omelette with ham, yellow cheese, mushrooms and vegetables." },
-      { mk: "Англиски доручек", en: "English breakfast", p: 230, img: "u_angliski.webp",
+      { mk: "Англиски доручек", en: "English breakfast", p: 230, img: "own_angliski.webp",
         dmk: "Јајца, сланина, колбас, печурки и тост.", den: "Eggs, bacon, sausage, mushrooms and toast." },
       { mk: "Даска похована", en: "Breaded platter", q: "мала / голема", p: [690, 990], img: "u_daska.webp",
         dmk: "Избор од поховани предјадења – кашкавал, тиквици, пиперки, печурки и зденка.", den: "A selection of breaded starters – yellow cheese, zucchini, peppers, mushrooms and Zdenka cheese." }
