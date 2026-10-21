@@ -122,6 +122,7 @@ own_taratur.webp  provided by the user
 own_martini.webp  provided by the user
 own_pohovani_tikvici.webp  provided by the user
 own_meshana.webp  provided by the user
+own_anticka.webp  provided by the user (was Macedonian salad photo)
 own_makedonska.webp  provided by the user
 own_marula.webp  provided by the user
 own_pileski_stek.webp  provided by the user
@@ -158,3 +159,4 @@ own_pivo_krali.webp  provided by the user
 own_pivo_zlaten.webp  provided by the user
 own_alexandria_cuvee_belo.webp  provided by the user (Tikveš product photo)
 own_alexandria_cuvee_crveno.webp  provided by the user (Tikveš product photo)
+own_zelka.webp  provided by the user
