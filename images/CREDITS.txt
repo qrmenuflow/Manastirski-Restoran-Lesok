@@ -53,8 +53,8 @@ u_indiski.webp  https://images.unsplash.com/photo-1509912760195-4f6cfd8cce2c
 u_miks.webp  https://images.unsplash.com/photo-1693812879904-b8161644ce5a
 u_palacinka.webp  https://images.unsplash.com/photo-1695518069327-60d7601794a4
 u_vafla.webp  https://images.unsplash.com/photo-1656517092618-0902a2f8b5ac
-choose_drinks.webp  https://images.unsplash.com/photo-1470158499416-75be9aa0c4db
-choose_food.webp  https://images.unsplash.com/photo-1750190624608-57ceddba8d69
+
+
 u_pohovani_tikvici.webp  https://images.unsplash.com/photo-1569172128162-8bee1c732e69
 u_zdenka.webp  https://images.unsplash.com/photo-1778850855907-8fbf7b089621
 u_pohovana_piperka.webp  https://images.unsplash.com/photo-1780823223692-b21c51644ab0
@@ -147,3 +147,5 @@ own_uzo.webp  provided by the user
 own_polneti_piperki.webp  provided by the user
 own_mirinda_portokal.webp  provided by the user
 own_angliski.webp  provided by the user
+choose_food.webp  https://images.unsplash.com/photo-1614277786110-1a64e457c4c3
+choose_drinks.webp  https://images.unsplash.com/photo-1474722883778-792e7990302f
