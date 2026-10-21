@@ -227,11 +227,11 @@ window.MENU = [
   {
     id: "beer", group: "drinks", mk: "Пива", en: "Beer",
     items: [
-      { mk: "Златен даб", en: "Zlaten Dab", q: "0,3 л. / 0,5 л.", img: "u_pivo_zlaten.webp", p: 120 },
-      { mk: "Крали Марко", en: "Krali Marko", q: "0,5 л.", img: "u_pivo_krali.webp", p: 120 },
+      { mk: "Златен даб", en: "Zlaten Dab", q: "0,3 л. / 0,5 л.", img: "own_pivo_zlaten.webp", p: 120 },
+      { mk: "Крали Марко", en: "Krali Marko", q: "0,5 л.", img: "own_pivo_krali.webp", p: 120 },
       { mk: "Туборг", en: "Tuborg", q: "0,33 л.", img: "u_pivo_tuborg.webp", p: 170 },
-      { mk: "Carlsberg", en: "Carlsberg", q: "0,33 л.", img: "u_pivo_carlsberg.webp", p: 200 },
-      { mk: "Blanc", en: "Blanc", q: "0,3 л.", img: "u_pivo_blanc.webp", p: 240 }
+      { mk: "Carlsberg", en: "Carlsberg", q: "0,33 л.", img: "own_pivo_carlsberg.webp", p: 200 },
+      { mk: "Blanc", en: "Blanc", q: "0,3 л.", img: "own_pivo_blanc.webp", p: 240 }
     ]
   },
   {
