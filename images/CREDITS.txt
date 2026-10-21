@@ -165,3 +165,4 @@ own_devojacka.webp  provided by the user
 own_polneta.webp  provided by the user
 own_batak.webp  provided by the user
 own_pivo_tuborg.webp  provided by the user (Tuborg product photo)
+own_temjanika.webp  provided by the user (Tikveš product photo)
