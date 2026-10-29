@@ -216,7 +216,7 @@ window.MENU = [
       { mk: "Газоза", en: "Gazoza (lemon soda)", q: "0,25 л.", img: "own_gazoza.webp", p: 100 },
       { mk: "Вода негазирана", en: "Still water", q: "0,25 л. / 0,7 л.", img: "u_voda.webp", p: [60, 120] },
       { mk: "Вода газирана", en: "Sparkling water", q: "0,25 л. / 0,7 л.", img: "own_voda_gaz.webp", p: [60, 120] },
-      { mk: "Негазиран сок /Gusto/", en: "Juice /Gusto/", q: "0,2 л.", img: "u_sok.webp", p: 90,
+      { mk: "Негазиран сок /Gusto/", en: "Juice /Gusto/", q: "0,2 л.", img: "u_sok.webp", p: 110,
         dmk: "портокал, јаболка, боровница, праска", den: "orange, apple, blueberry, peach" },
       { mk: "Цеден лимон", en: "Fresh lemon juice", q: "0,2 л.", p: 100, img: "u_ceden_limon.webp" },
       { mk: "Цеден портокал", en: "Fresh orange juice", q: "0,2 л.", img: "u_ceden_portokal.webp", p: 150 },
