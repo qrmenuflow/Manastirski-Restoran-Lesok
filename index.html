@@ -380,7 +380,7 @@
       address: "с. Лешок, Тетово, Македонија",
       prices: "Цените се во денари (МКД) и го вклучуваат ДДВ.",
       credits: "Фотографии: Unsplash и Wikimedia Commons · илустративни.",
-      house: "Специјалитет", veg: "Вегетаријанско", fast: "Посно", den: "ден", ask: "по договор",
+      house: "Специјалитет", veg: "Вегетаријанско", spicy: "Луто", fast: "Посно", den: "ден", ask: "по договор",
       choose: "Изберете", food: "Храна", drinks: "Пијалоци", back: "Назад",
       foodSub: "Предјадења · Салати · Скара · Десерти", drinksSub: "Кафе · Сокови · Пиво · Вино · Ракија"
     },
@@ -392,7 +392,7 @@
       address: "Lešok village, Tetovo, Macedonia",
       prices: "Prices are in Macedonian denars (MKD), VAT included.",
       credits: "Photos: Unsplash and Wikimedia Commons · illustrative.",
-      house: "Specialty", veg: "Vegetarian", fast: "Fasting", den: "MKD", ask: "on request",
+      house: "Specialty", veg: "Vegetarian", spicy: "Spicy", fast: "Fasting", den: "MKD", ask: "on request",
       choose: "Choose", food: "Food", drinks: "Drinks", back: "Back",
       foodSub: "Starters · Salads · Grill · Desserts", drinksSub: "Coffee · Juices · Beer · Wine · Spirits"
     }
@@ -401,6 +401,7 @@
   var ICON = {
     house: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5z"/></svg>',
     veg: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19l7-7"/></svg>',
+    spicy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6c3 0 5 2.5 5 5.5C19 17 13 21 6 21c-1 0-1.5-.8-.8-1.4C9 16.5 10 13 10 10c0-2.2 1.8-4 4-4z"/><path d="M14 6c0-1.5 1-3 3-3"/></svg>',
     fast: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M7 8h10M9 16l6-2"/></svg>'
   };
   var ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"];
@@ -448,8 +449,10 @@
     document.querySelectorAll("[data-i18n]").forEach(function (el) { el.textContent = t[el.dataset.i18n]; });
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.lang === lang)); });
 
-    var hasTags = window.MENU.some(function (c) { return c.items.some(function (d) { return (d.tags || []).length; }); });
-    document.getElementById("legend").innerHTML = hasTags ? marksHTML(["house", "veg", "fast"]) : "";
+    // Legend: only the labels used in the open section (food or drinks)
+    var used = {};
+    window.MENU.forEach(function (c) { if (c.group === group) c.items.forEach(function (d) { (d.tags || []).forEach(function (k) { used[k] = 1; }); }); });
+    document.getElementById("legend").innerHTML = marksHTML(["house", "veg", "spicy", "fast"].filter(function (k) { return used[k]; }));
 
     document.body.classList.toggle("in-group", !!group);
     var cats = window.MENU.map(function (c, ci) { return { c: c, ci: ci }; })

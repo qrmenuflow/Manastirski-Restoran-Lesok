@@ -168,3 +168,16 @@ own_pivo_tuborg.webp  provided by the user (Tuborg product photo)
 own_temjanika.webp  provided by the user (Tikveš product photo)
 own_rakija_1.webp  provided by the user
 own_rakija_2.webp  provided by the user
+own_margarita.webp  provided by the user
+own_pastrmajlija.webp  provided by the user
+own_peperoni.webp  provided by the user
+own_kapricoza.webp  provided by the user
+own_fungi.webp  provided by the user
+own_bekon.webp  provided by the user
+own_kvatro.webp  provided by the user
+own_posna_pica.webp  provided by the user
+own_prosuto.webp  provided by the user
+own_furnarinki.webp  provided by the user
+own_pancerota.webp  provided by the user
+own_pica_sendvic.webp  provided by the user
+own_manastirska_pica.webp  provided by the user

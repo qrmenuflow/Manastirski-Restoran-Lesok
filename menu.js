@@ -142,6 +142,45 @@ window.MENU = [
     ]
   },
   {
+    id: "pizza", group: "food", mk: "Пици", en: "Pizzas",
+    sizes: { mk: ["Големина 32 cm"], en: ["Size 32 cm"] },
+    items: [
+      { mk: "Маргарита", en: "Margherita", img: "own_margarita.webp", p: 290, tags: ["veg"],
+        dmk: "пелат, кашкавал, оригано", den: "tomato sauce, yellow cheese, oregano" },
+      { mk: "Капричиоза", en: "Capricciosa", img: "own_kapricoza.webp", p: 350,
+        dmk: "пелат, кашкавал, пилешка шунка, шампињони, оригано", den: "tomato sauce, yellow cheese, chicken ham, mushrooms, oregano" },
+      { mk: "Пеперони", en: "Pepperoni", img: "own_peperoni.webp", p: 370, tags: ["spicy"],
+        dmk: "пелат, кашкавал, кулен, оригано", den: "tomato sauce, yellow cheese, kulen (spicy sausage), oregano" },
+      { mk: "Пршута", en: "Prosciutto", img: "own_prosuto.webp", p: 390,
+        dmk: "пелат, кашкавал, пршута, оригано", den: "tomato sauce, yellow cheese, prosciutto, oregano" },
+      { mk: "Бекон", en: "Bacon", img: "own_bekon.webp", p: 350,
+        dmk: "пелат, кашкавал, сланина, оригано", den: "tomato sauce, yellow cheese, bacon, oregano" },
+      { mk: "Фунги", en: "Funghi", img: "own_fungi.webp", p: 330, tags: ["veg"],
+        dmk: "пелат, кашкавал, шампињони, оригано", den: "tomato sauce, yellow cheese, mushrooms, oregano" },
+      { mk: "Кватро Формаџи", en: "Quattro Formaggi", img: "own_kvatro.webp", p: 380, tags: ["veg"],
+        dmk: "пелат, кашкавал, ајдамер, моцарела, горгонзола, пармезан", den: "tomato sauce, yellow cheese, Edam, mozzarella, gorgonzola, parmesan" },
+      { mk: "Манастирски ресторан", en: "\"Monastery Restaurant\" pizza", img: "own_manastirska_pica.webp", p: 400,
+        dmk: "пелат, кашкавал, сланина, пршута, рукола, шери, пармезан", den: "tomato sauce, yellow cheese, bacon, prosciutto, rocket, cherry tomatoes, parmesan" },
+      { mk: "Посна пица", en: "Lenten pizza", img: "own_posna_pica.webp", p: 330, tags: ["veg", "fast"],
+        dmk: "посен пелат, посен кашкавал, печурки, маслинки", den: "vegan tomato sauce, vegan cheese, mushrooms, olives" },
+      { mk: "Пастрмајлија со пилешко", en: "Pastrmajlija with chicken", img: "own_pastrmajlija.webp", p: 410,
+        dmk: "пелат, кашкавал, пилешко филе", den: "tomato sauce, yellow cheese, chicken fillet" },
+      { mk: "Пастрмајлија со свинско", en: "Pastrmajlija with pork", img: "own_pastrmajlija.webp", p: 420,
+        dmk: "пелат, кашкавал, свинско месо", den: "tomato sauce, yellow cheese, pork" },
+      { mk: "Панцерота", en: "Panzerotti", img: "own_pancerota.webp", p: 260 },
+      { mk: "Пица сендвич", en: "Pizza sandwich", img: "own_pica_sendvic.webp", p: 220 }
+    ]
+  },
+  {
+    id: "furnarinki", group: "food", mk: "Фурнаринки", en: "Furnarinki (oven-baked bread)",
+    items: [
+      { mk: "Фурнаринки", en: "Furnarinki", img: "own_furnarinki.webp", p: 90, tags: ["veg", "fast"] },
+      { mk: "Фурнаринки со лук и магдонос", en: "Furnarinki with garlic and parsley", img: "own_furnarinki.webp", p: 110, tags: ["veg", "fast"] },
+      { mk: "Фурнаринки со кашкавал", en: "Furnarinki with yellow cheese", img: "own_furnarinki.webp", p: 130, tags: ["veg"] },
+      { mk: "Фурнаринки со сланина и кашкавал", en: "Furnarinki with bacon and yellow cheese", img: "own_furnarinki.webp", p: 150 }
+    ]
+  },
+  {
     id: "to-order", group: "food", mk: "Јадења по нарачка", en: "Dishes to Order",
     note: {
       mk: "Се нарачува 1 ден однапред (24 часа) за да биде подготвено. Цена по договор.",
